@@ -1,0 +1,47 @@
+Package: PROscorer
+Type: Package
+Title: Score Common Patient-Reported Outcome (PRO) Measures and Other Psychometric Instruments
+Version: 0.0.1.9000
+Authors@R: person("Ray", "Baser", email="ray.stats@gmail.com", role=c("aut", "cre"))
+Description: Provides reliable, accurate, up-to-date functions to score 
+    commonly used patient-reported outcome (PRO), quality of life (QoL), and 
+    other psychometric measures.  PROscorer, together with the PROscorerTools 
+    package, is a system to facilitate the incorporation of PRO measures into 
+    research studies in a scientifically rigorous and reproducible manner.  
+    These packages and their vignettes are intended to help establish and 
+    promote "best practices" for scoring and describing PRO-like measures in 
+    research.  PROscorer is a centralized, extendable repository of accurate, 
+    open source scoring functions for commonly used PRO measures and other 
+    scored psychometric questionnaires.  The PROscorer "Instrument 
+    Descriptions" vignette contains descriptions of each instrument scored by 
+    PROscorer, complete with references.  These instrument descriptions are 
+    purposefully written to be suitable for inclusion in formal study protocol 
+    documents, grant proposals, and manuscript Method sections.  Each 
+    PROscorer function is composed of helper functions from the PROscorerTools 
+    package, and users are encouraged to contribute new functions to 
+    PROscorer.  Just use PROscorerTools to write a scoring function for your 
+    favorite PRO measure, and submit it to me (a tutorial will be provided in 
+    a forthcoming vignette for the PROscorerTools package).  After extensive 
+    accuracy checks, it can be included in future versions of the PROscorer 
+    package.  Scoring procedures represent a major source of error in research 
+    studies that rely upon PRO and similar measures.  These errors typically 
+    go unnoticed, hidden, and/or ignored, eroding the scientific integrity of 
+    the research and hindering progress in the numerous scientific fields that 
+    conduct studies that use these measures.  One small scoring error can 
+    severely compromise measurement validity and reliability, as well as make 
+    research results impossible to reproduce and replicate.  The lofty goal of 
+    the PROscorer package is to eliminate this serious deficiency in PRO-
+    based research by serving as the gold-standard repository of scoring 
+    syntax for PRO-like measures commonly used in research.  Eventually, use 
+    of PROscorer to score outcome measures should be a basic requirement for a 
+    study to be funded and its results published (in my humble opinion).  The
+    current version is still somewhat developmental, since the formal unit 
+    testing system is not yet in place.  Please use with caution at this time, 
+    and feel free to contact me with questions or suggestions.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: http://github.com/raybaser/PROscorer
+BugReports: http://github.com/raybaser/PROscorer/issues
+RoxygenNote: 5.0.1
+Imports: PROscorerTools
