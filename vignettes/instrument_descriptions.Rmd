@@ -1,0 +1,209 @@
+---
+title: "PROscorer Instrument Descriptions"
+author: "Ray Baser"
+date: "`r Sys.Date()`"
+output: 
+  rmarkdown::html_vignette:
+    toc: true
+    toc_depth: 3
+vignette: >
+  %\VignetteIndexEntry{Descriptions of Instruments Scored by PROscorer}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Introduction:
+
+This vignette includes descriptions of the instruments scored by the
+[PROscorer](cran.r-project.org/package=PROscorer) package.
+
+__PROBLEM:__ Patient reported outcome (PRO) measures are frequently poorly and
+inadequately described in formal research protocol documents and published
+reports of study results.
+
+__CONSEQUENCES:__ In protocols, this makes it difficult or impossible to
+evaluate the suitability of the PRO measures as study outcomes, including
+whether the proposed analysis plans are appropriate.   The same consequences
+apply to published study results.  In addition, poor PRO measure descriptions in
+published studies hinder the ability interpret, replicate, and reproduce study
+results.  Altogether, this impedes the scientific progress of research that
+relies upon PRO and similar measures.
+
+__SOLUTION:__ Create a repository of high-quality descriptions of specific PRO
+instruments (i.e., this vignette document), written according to explicit
+guidelines for describing PRO measures in research protocols and papers.
+
+This document is intended to ease the burden of writing research protocols and
+manuscripts for studies with quality of life (QOL) or other patient-reported
+outcome (PRO) measures as endpoints.
+
+The descriptions are written with sufficient detail to be included in formal
+research protocol documents that utilize the instruments as outcome measures. 
+They are also suitable for the "Measures" subsection of manuscripts reporting
+the results of such studies (potentially with editing, to meet word limits). 
+They were written with these purposes in mind, and follow the below _"Guidelines
+for Describing PRO Measures"_ that I developed based on personal experience and
+several sources of "best practices" for describing measures (references coming
+soon).
+
+
+# How to Use These Descriptions:
+
+Each instrument description is complete with relevant references.  In most
+cases, the description can be copied and pasted directly into your document with
+only very minor modifications.
+
+The following modifications are needed:  
+
+*  Move the references to the References section of the your document, and
+update in-text citation numbers accordingly.
+
+*  If not all of the scored scales of the instrument are of interest to the
+study objectives, then add a sentence indicating the focal scale scores.
+
+Please cite the PROscorer package and this vignette document:
+
+  Baser, RE (2016). PROscorer: Score Common Patient-Reported Outcome (PRO) 
+  Measures and Other Psychometric Instruments. R package version 0.0.1. 
+  http://github.com/raybaser/PROscorer
+  
+  Baser, RE (2016). Descriptions of Instruments Scored by the PROscorer 
+  R Package. R Package Vignette version 0.0.1. 
+  https://cran.r-project.org/package=PROscorer
+
+
+# Guidelines for Describing PRO Measures:
+
+I developed the following guidelines during my service as a chair of the
+Biostatistics Protocol Review Committee at Memorial Sloan Kettering Cancer
+Center (MSKCC). If you would like to contribute a scoring function to the
+PROscorer package, please use these guidelines to write a description of your
+instrument.
+
+Information to Include Descriptions of PRO Measures:
+
+1.  The total number of questions/items on the instrument(s), their response
+format (e.g., 5-point Likert scale, True/False, etc.), and the time period for
+which respondents are asked to consider each item (e.g., “In past week, how
+often … ”).
+
+2.	The names of any subscale scores that the instrument yields, descriptions of
+the specific constructs that each of these subscales are intended to measure,
+the number of items included on each subscale, the range of scores that is
+possible on each subscale, the interpretation of higher scores (e.g., higher
+scores indicate more/less severe symptom levels), and, if available, reliability
+coefficients (e.g., internal consistency, test-retest) for each subscale score
+and, if relevant, for the instrument’s total score.
+
+    a.	If not all of the instrument’s scales are relevant to evaluating the
+    study objective, please indicate which scale scores will be utilized.
+    b.  Many PROM scores have validated cut-points that divide the scores into 2
+    or more range categories believed to be clinically or diagnostically
+    relevant.  If the protocol PROM scores will be categorized, provide the
+    score cut-points or ranges defining each category as well as the clinical
+    interpretation of each category.
+
+3.	The PROM’s scoring instructions, or a citation and reference to a publication
+containing the scoring instructions.
+
+    a.  A citation and reference to a publication containing the scoring
+    instructions, if available, is sufficient.  Often, the scoring instructions
+    are included in the report of the PROM’s original psychometric validation. 
+    b.  If the scoring instructions are unpublished, as might be the case with a
+    newly developed PROM, they must be included in the protocol, possibly as an
+    appendix.
+
+4.	Estimates of how long it will take study participants to complete each PROM,
+as well as an estimate of how long it will take them to complete the full
+battery of PROMs.
+
+
+# Instrument Descriptions: 
+
+## Female Sexual Function Index (FSFI)
+The **Female Sexual Function Index (FSFI)** is a multidimensional self-report
+measure of female sexual functioning**[REF 1]**.  It asks women to rate its 19
+items according to "the past 4 weeks" using a Likert-type response format.  Four
+of the items are scored from 1 to 5, and fifteen are scored from 0 to 5 (with 0
+corresponding to response option "Did not attempt intercourse").  It takes
+approximately 5-10 minutes to complete.
+
+In additional to the FSFI Total score, the FSFI produces 6 subscale scores
+corresponding to distinct sexual function domains: Desire (2 items), Arousal (4
+items), Lubrication (4 items), Orgasm (3 items), Satisfaction (3 items), and
+Pain (3 items).  The FSFI scoring algorithm sums the items on each subscale and
+then scales the sums so that each subscale has a maximum possible score of 6. 
+The subscales have a minimum possible score of 0 except for Desire and
+Satisfaction, which have minimum possible scores of 1.2 and 0.8, respectively. 
+This is because those two subscales contain the four items scored 1 to 5
+(instead of 0 to 5).  The FSFI total score is the sum of the 6 subscale scores
+and ranges from 2 to 36.  Higher scores indicate better functioning for all
+scores.  Accurate scoring for the FSFI is available in the _PROscorer_ R
+package**[REF 2]**.
+
+The initial FSFI validation study**[REF 1]** reported excellent internal
+consistency reliability for the FSFI total score (Cronbach’s α = 0.97) and
+subscales (Cronbach’s α range = 0.89 to 0.96).  A FSFI total score of 26.55 or
+less has been validated as a diagnostic cut off score suggestive of female
+sexual dysfunction**[REF 3]**.  The FSFI has also been validated for assessing
+sexual function among sexually active female cancer survivors**[REF 4]**.
+
+#### REFERENCES:
+1.  Rosen, R, Brown, C, Heiman, J, Leiblum, S, Meston, C, Shabsigh, R, …
+D’Agostino, R. (2000). The Female Sexual Function Index (FSFI): a
+multidimensional self-report instrument for the assessment of female sexual
+function. Journal of Sex & Marital Therapy, 26(2), 191–208.
+
+2.  Baser, RE. (2016). PROscorer: A Repository of Functions to Accurately Score
+Commonly Used Patient-Reported Outcome Measures and Psychometric Questionnaires.
+R Package Version 0.0.1.
+
+3.  Wiegel, M, Meston, C, & Rosen, R. (2005). The Female Sexual Function Index
+(FSFI): Cross-Validation and Development of Clinical Cutoff Scores. Journal of
+Sex & Marital Therapy, 31(1), 1–20.
+
+4.  Baser, RE, Li, Y, & Carter, J. (2012). Psychometric validation of the female
+sexual function index (FSFI) in cancer survivors. Cancer, 118(18), 4606–4618.
+
+
+
+
+## Cognitive Causation (CC) and Negative Affect in Risk (NAR)
+The **Cognitive Causation (CC)** and **Negative Affect in Risk (NAR)** scales
+are two new measures of intuitive, gut-level aspects of cancer risk
+perception**[REF 1]**.  The CC scale measures the extent to which respondents
+believe that thoughts about cancer risk can encourage the development of the
+disease, and that minimizing such thoughts can actually reduce cancer risk.  It
+originally contained 10 items**[REF 1]**, but it is recommended to score only 7
+items**[REF 2]**.  The NAR scale contains 6 items and measures negative
+anticipatory affect, or negative emotions (e.g., fear) generated during cancer
+risk information processing.  Both the CC and NAR items have 4, Likert-type
+response options that are assigned numeric scores: Strongly Disagree = 0,
+Disagree = 1, Agree = 2, and Strongly Agree = 3.  Each instrument takes
+approximately 2-5 minutes to complete.
+
+The preferred scoring method is to first calculate the mean of the item scores,
+and then transform that mean to range from 0 to 100.  Higher scores indicate
+greater levels of the constructs being measured**[REF 2]**.  A score should only
+be assigned to respondents who validly completed at least half of items on a
+given scale.  The CC and NAR scales can be accurately scored using the
+_scoreNARCC_ function in the _PROscorer_ R package**[REF 3]**.
+
+Both scales have had consistently high reliability across diverse samples, with
+Cronbach's alpha coefficients all 0.89 or higher**[REF 1]**.  The items have
+also demonstrated measurement invariance across highly diverse samples**[REF
+2]**.
+
+#### REFERENCES:
+1.  Hay, JL, Baser, R, Weinstein, ND, Li, Y, Primavera, L, & Kemeny, MM. (2014).
+Examining intuitive risk perceptions for cancer in diverse populations. Health,
+Risk & Society, 16(3), 227–242.
+
+2.  Baser, RE, Li, Y, Brennessel, D, Kemeny, MM, & Hay, JL. (2016). Measurement
+Invariance of Intuitive Cancer Risk Perceptions Across Diverse Populations: The
+Cognitive Causation and Negative Affect in Risk Scales. Journal of Health
+Psychology.
+
+3.  Baser, RE. (2016). PROscorer: A Repository of Functions to Accurately Score
+Commonly Used Patient-Reported Outcome Measures and Psychometric Questionnaires.
+R Package Version 0.0.1.

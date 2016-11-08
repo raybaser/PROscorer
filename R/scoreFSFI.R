@@ -1,41 +1,9 @@
-#####====================================================================================#####
+#####======================================================================#####
 #  Program: 				FSFI Scoring Syntax
 #  Author: 					Ray Baser
 #  Original Date Written: 	2016-08-26
 #  Original Purpose: 		PROscorer
-#####====================================================================================#####
-
-
-#####  Steps -------
-#   - Make indicators of missing for each item
-#		- Sum total miss for all items
-#		- Sum total miss for each subscale
-#   - Make indicators of zero response for the 15 relevant items
-#		- Sum total zero for all items
-#		- Sum total zero for each subscale
-#	- Make indicators of missing OR zero for each item
-#		- Sum total miss/zero for all items
-#		- Sum total miss/zero for each subscale
-#
-#	- Create sexActiveFSFI variable based on total missing/zero <= 7
-#
-#	- Score subscales requiring at least 2 valid per subscale
-#		- Score Total Score requiring 5 out of 6 valid subscale scores
-#		- Create fsfiSexDys variable based on 25 (or was it 26?) and one based on 25.55 (or whatever it is)
-
-########## 			*** BELOW NOT DONE AS OF 2013-08-13 ***			##########
-
-#	- Score subscales requiring only 1 valid per subscale,
-#		- Total Score still requires 5 out of 6 valid subscale scores
-#		- Create same fsfiSexDys variables as above, based on this Total Score version
-#
-#	- EXPERIMENTAL ONLY, DO IF TIME:
-#		- Score similarly to above, but recode zeros as missing
-
-
-
-###  "items" is a N*19 matrix or data frame of FSFI item responses, IN ORDER.
-###	 The names of the individual items shouldn't matter.
+#####======================================================================#####
 
 #' @title Score the Female Sexual Function Index (FSFI)
 #'
@@ -45,7 +13,7 @@
 #'   possibly other variables.
 #' @param iprefix Item number prefix.  Quote the letter(s) preceding the FSFI
 #'   item numbers in your data frame.  If this argument is omitted, the function
-#'   will assume that your items are named "fsfi1", "fsfi2", etc.
+#'   will assume that your items are named \code{"fsfi1"}, \code{"fsfi2"}, etc.
 #' @param keepNvalid Logical, whether to return variables containing the
 #'   number of valid, non-missing items on each scale for each respondent should
 #'   be returned in the data frame with the scale scores.  The default is
@@ -53,7 +21,54 @@
 #'   named \code{"scalename_N"} (e.g., \code{fsfi_pain_N}).
 #'
 #'
-#' @return A data frame with the following scale scores is returned:
+#' @details
+#' This function returns the 6 subscale scores and the FSFI Total score (Rosen
+#' et al., 2000), as well as an indicator variable flagging repondents with FSFI
+#' Total scores suggestive of clinically significant levels of sexual
+#' dysfunction (i.e., \code{fsfi_tot <= 26.55}; Wiegel et al., 2005).
+#'
+#' The FSFI is intended to measure the sexual function of recently sexually
+#' active women (Rosen et al., 2000), and strong evidence suggests it may not be
+#' a valid measure of sexual function in women with little or no recent sexual
+#' activity (e.g., see Baser et al., 2012).
+#'
+#' As such the \code{scoreFSFI} function also returns two variables
+#' (\code{fsfi_nzero15} and \code{fsfi_sexactive01}) that can be used to
+#' evaluate whether respondents have been sufficiently sexually active for the
+#' FSFI to be a valid assessment of their sexual function.  These variables are
+#' based on the fact that 15 of the 19 FSFI items have a response option of "no
+#' sexual activity" or "did not attempt intercourse", which corresponds to an
+#' item score of \code{0}.  Specifically, the \code{fsfi_nzero15} variable
+#' contains the number of items with responses of \code{0} or \code{NA} (out of
+#' those 15 items that have a response option indicating "no sexual activity").
+#' Missing responses (i.e., \code{NA}) are included in this count because
+#' respondents with no relevant sexual activity often skip these items.  The
+#' \code{fsfi_sexactive01} variable is a rough indicator that a respondent was
+#' sufficiently sexually active for the FSFI to be a valid assessment of their
+#' sexual function.  It is a dummy variable that is \code{1} when
+#' \code{fsfi_nzero15 <= 7} (i.e., when the respondent said "no sexual activity"
+#' to 7 or fewer of the 15 items with that option), and \code{0} otherwise.  See
+#' Baser et al. (2012) for more details on how this cutoff was chosen because.
+#'
+#'
+#' @section How Missing Data is Handled:
+#' The \code{scoreFSFI} function will calculate the 6 subscale scores as long as
+#' at least half of the items on the given subscale have valid, non-mising item
+#' responses.  More concretely, must have at least 2 non-missing responses on
+#' each subscale except for Desire, which has only 2 items and requires only 1
+#' non-missing response.  The \code{scoreFSFI} function will calculate the FSFI
+#' Total Score for a respondent as long as it was able to calculate at least 5
+#' out of the 6 subscale scores.  Scores calculated in the presence of missing
+#' items are pro-rated so that their theoretical minimum and maximum values are
+#' identical those from scores calculated from complete data.
+#'
+#' These methods of handling missing item responses were chosen to balance the
+#' reality that respondents often skip some items with the need to maintain the
+#' validity of the scores.  However, we know of no directly applicable empirical
+#' study that supports these choices, and encourage more research into how
+#' missing responses affect the psychometrics of this and other instruments.
+#'
+#' @return A data frame with the following variables is returned:
 #'
 #' \itemize{
 #'   \item \strong{fsfi_des} - FSFI Desire subscale (range 2 - 6)
@@ -64,20 +79,35 @@
 #'   \item \strong{fsfi_pain} - FSFI Pain subscale
 #'   \item \strong{fsfi_tot} - FSFI Total score
 #'   \item \strong{fsfi_dys01} - Indicator of FSFI sexual dysfunction (i.e.,
-#'     fsfi_tot <= 26.55)
+#'     \code{fsfi_tot <= 26.55}); \code{0} = No Dysfunction, \code{1} =
+#'     Dysfunction
 #'   \item \strong{fsfi_nzero15} - There are 15 FSFI items that have a response
 #'     option of \code{0} ("No sexual activity").  This is the number of those
-#'     items with responses of 0 or NA. (See Details.)
+#'     items with responses of \code{0} or \code{NA} (See Details).
 #'   \item \strong{fsfi_sexactive01} - For the FSFI scores to be valid estimates
 #'     of sexual functioning, respondents need to have been sexually active
 #'     during the 4 week recall period.  This variable indicates whether their
 #'     sexual activity levels were high enough for their FSFI scores to be
-#'     valid. Specifically, it is an indicator that fsfi_nzero15 <= 7.  (See
-#'     Details.)
+#'     valid.  Specifically, it is an indicator that \code{fsfi_nzero15 <= 7} (See
+#'     Details).
 #' }
 #'
 #'   Optionally, the data frame can additionally have variables containing the
 #'   number of valid item responses on each scale for each respondent.
+#'
+#' @references
+#' Rosen, R, Brown, C, Heiman, J, Leiblum, S, Meston, C, Shabsigh, R, …
+#' D’Agostino, R. (2000). The Female Sexual Function Index (FSFI): a
+#' multidimensional self-report instrument for the assessment of female sexual
+#' function. \emph{Journal of Sex & Marital Therapy, 26}(2), 191–208.
+#'
+#' Wiegel, M, Meston, C, & Rosen, R. (2005). The Female Sexual Function Index
+#' (FSFI): Cross-Validation and Development of Clinical Cutoff Scores.
+#' \emph{Journal of Sex & Marital Therapy, 31}(1), 1–20.
+#'
+#' Baser, RE, Li, Y, & Carter, J. (2012). Psychometric validation of the female
+#' sexual function index (FSFI) in cancer survivors. \emph{Cancer, 118}(18),
+#' 4606–4618.
 #'
 #' @export
 #'

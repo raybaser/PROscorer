@@ -89,13 +89,14 @@ The \pkg{PROscorer} package contains functions to score specific
       inclusion in \pkg{PROscorer}.  Submitted functions will be carefully
       reviewed and tested in collaboration with the function author to ensure
       accurate and bug-free scoring before being included in a future version
-      of \pkg{PROscorer}.  The \pkg{PROscorerTools} package will include a
-      series of vignettes teaching users how to write new functions using the
-      \pkg{PROscorerTools} building blocks, how to submit their functions for
-      potential inclusion in \pkg{PROscorer}, and how to write the
-      corresponding instrument descriptions with all of the required detail.
-      [These vignettes are currently incomplete or not yet written.  They
-      will be added in their entirety to upcoming versions of the packages.]
+      of \pkg{PROscorer}.  The \pkg{PROscorerTools} and \pkg{PROscorer}
+      packages will include a series of vignettes teaching users how to write
+      new functions using the \pkg{PROscorerTools} building blocks, how to
+      submit their functions for potential inclusion in \pkg{PROscorer}, and
+      how to write the corresponding instrument descriptions with all of the
+      required detail. [These vignettes are currently incomplete or not yet
+      written.  They will be added in their entirety to upcoming versions of
+      the packages.]
     \item Spread the word about the \pkg{PROscorer} and \pkg{PROscorerTools}
       packages through social media, blogs, and asking users to recognize and
       cite the \pkg{PROscorer} package in research protocols and manuscripts
