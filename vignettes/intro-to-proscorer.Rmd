@@ -1,0 +1,261 @@
+---
+title: "Introduction to PROscorer"
+author: "Ray Baser"
+date: "`r Sys.Date()`"
+output: 
+  rmarkdown::html_vignette:
+    toc: true
+    toc_depth: 3
+vignette: >
+  %\VignetteIndexEntry{Introduction to PROscorer}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Overview 
+
+The _PROscorer_ package is an extensible repository of functions to score 
+specific patient-reported outcome (PRO), quality of life (QoL), and other
+psychometric measures and questionnaire-based instruments commonly used in
+research.
+
+(Note: For simplicity, from here forward I will collectively and somewhat imprecisely refer to these types of instruments as "PRO measures", "PRO-like instruments", or just "PROs".)
+
+Recent efforts by International Society for Quality of Life Research (ISOQOL) 
+taskforces have sought to standardize the reporting, analysis, and protocol 
+descriptions of PRO measures.  However, no best practice guidance nor
+standardized software exists for scoring PROs.  The _PROscorer_ project was
+designed to establish best practices for scoring PROs by providing a system to
+standardize the scoring and documentation of commonly-used PROs.  Importantly,
+the _PROscorer_ R package also facilitates the integration of PRO scoring into
+scientifically reproducible workflows.
+
+Each function in the *PROscorer* package scores a different PRO measure. 
+Functions are named using the initials of the PRO measure.  For example, the
+`fsfi` function scores the Female Sexual Function Index (FSFI).
+
+*PROscorer* also comes with a vignette containing detailed descriptions of each
+of the instruments scored by *PROscorer* (see [PROscorer Instrument 
+Descriptions](https://cran.r-project.org/web/packages/PROscorer/vignettes/instrument-descriptions.html)).
+The purpose of including these instrument descriptions, complete with 
+references, is to help improve the descriptions of PRO measures in protocols, 
+grants, and published results.  In most cases, the descriptions can
+be used in research documents with little or no editing.
+
+To minimize the possibility of scoring errors and other bugs, each *PROscorer*
+function is composed of simpler, well-tested "helper" functions from the 
+[PROscorerTools](https://CRAN.R-project.org/package=PROscorerTools) package. 
+This reliance on a small set of simple functions that have been thoroughly 
+tested ensures that the underlying code base of *PROscorer* functions is 
+bug-free, and that the scoring functions produce reliable, consistent, and 
+accurate results.
+
+*PROscorer*, together with the *PROscorerTools* package, is a system to 
+facilitate the incorporation of PRO measures into research studies and clinical 
+settings in a scientifically rigorous and reproducible manner.  The overarching 
+goals of the *PROscorer* and *PROscorerTools* packages are to draw attention to 
+best-practices for PRO scoring and reporting, and to help eliminate inaccurate
+and inconsistent scoring by standardizing the scoring procedures for commonly
+used PRO measures.
+
+
+
+## The Problem 
+The scientific rigor and reproducibility of research involving PRO, QoL, and
+similar measures is lagging behind other research areas.  Three major reasons
+for these shortcomings are (1) measurement error introduced by faulty scoring
+procedures, (2) inconsistent application of scoring instructions across
+different studies using the same PRO measures, and (3) inadequate, incomplete,
+and/or inaccurate descriptions of PRO-like measures in research protocols and in
+published results of studies that incorporate such measures.
+
+Scoring procedures represent a major source of error in research studies that
+rely upon PRO and similar measures.  These errors typically go unnoticed,
+hidden, and/or ignored, eroding the scientific integrity of the research and
+hindering progress in the numerous scientific fields that conduct studies that
+use these measures.
+
+Similarly, inconsistent application of PRO scoring procedures and variation in
+scoring across studies makes study results less likely to replicate and slows
+the accumulation of reliable scientific data from the PRO measure.
+
+Inadequate, incomplete, and/or inaccurate descriptions of PRO-like measures in
+research documents can cause confusion and introduce errors, oversights, and
+other mistakes at multiple stages in the research process.
+
+
+## The Proposed Solution 
+
+The **PROscorer** package provides a standardized framework for addressing these
+problems with research involving PRO-like measures.  The lofty goal of the 
+**PROscorer** package is to eliminate these serious deficiencies in PRO-based 
+research by serving as the gold-standard open-source repository of scoring 
+syntax and instrument descriptions for PRO-like measures commonly used in 
+research and clinical settings.
+
+The features of the **PROscorer** package and supporting infrastructure were
+carefully planned with this ambitious goal in mind.
+
+
+## Summary of Key Features
+
+*  **PROscorer** serves as the repository of scoring functions for specific,
+commonly-used PRO measures (e.g., the EORTC QLQ-C30).  
+
+*  Each function scores a specific PRO instrument (e.g., the `qlq_c30` function
+scores the EORTC QLQ-C30 quality of life questionnaire).  
+
+*  Protocol- and manuscript-ready descriptions of each PRO instrument are
+included in the supplementary documentation (i.e., vignettes).  
+
+*  Each function has thorough, helpful documentation.  
+
+*  Consistent naming conventions are used for functions and function arguments
+(e.g., functions are named using the initials of the instrument).
+
+*  Scoring functions require minimal user input.  
+
+*  Functions are composed modularly from a small number of reusable, well-tested
+"helper" functions.  A separate package, _PROscorerTools_, contains these helper
+functions.  
+    *  This minimizes the chances of programming errors and other bugs.  
+    *  This enhances the scalability and extensibility of _PROscorer_ by making
+    it easier and faster to update _PROscorer_ to score additional PROs.  
+    
+*  Advanced users can use _PROscorerTools_ to write functions to score their
+favorite PROs, and then submit them on GitHub for inclusion in future
+_PROscorer_ updates.  
+
+*  Makes it easy to incorporate PRO scoring into reproducible scientific 
+workflows.
+
+
+
+## Installation and Usage
+
+Install the stable version of *PROscorer* from CRAN:
+
+```{r eval=FALSE}
+install.packages("PROscorer")
+```
+
+Load *PROscorer* into your R workspace with the following:
+
+```{r eval=FALSE, message = FALSE}
+library(PROscorer)
+```
+
+As an example, we will use the `makeFakeData` function from the *PROscorerTools*
+package to make fake item responses to the EORTC QLQ-C30 quality of life
+questionnaire. The created data set (named "dat") has an "id" variable, plus
+responses to 30 items (named "q1", "q2", etc.) from 20 imaginary respondents. 
+There are also missing responses ("NA") scattered throughout.
+
+```{r eval=FALSE}
+dat <- PROscorerTools::makeFakeData(n = 20, nitems = 30, values = 1:4, id = TRUE)
+dat
+```
+
+Below we will use the `qlq_c30` function to score the fake responses in "dat". 
+We will save the scores from the EORTC QLQ-C30 questionnaire in a data frame
+named "c30scores".
+
+```{r eval=FALSE}
+c30scores <- qlq_c30(dat, 'q')
+c30scores
+```
+
+The first argument to `qlq_c30` took our data frame, "dat".  With the second
+argument, we needed to tell the `qlq_c30` function how to find our items in
+"dat".  Since our items are all named with the prefix "q" plus the item number,
+we gave this quoted prefix to the second argument.  These arguments actually
+have names, but in most cases you don't have to explicitly use the names.  Below
+gives the same results, but explicitly uses the argument names.
+
+```{r eval=FALSE}
+c30scores <- qlq_c30(df = dat, iprefix = 'q')
+c30scores
+```
+
+Specifically, the first argument is named `df` (for **d**ata **f**rame) and the
+second is named `iprefix` (for **i**tem prefix).
+
+If you want to merge your scores back into your main data frame with the item
+responses, there are several different ways to do so.  For example, assuming you
+have not changed the order of `dat` or `dat_scored`, you can do the following:
+
+```{r eval=FALSE}
+dat_scored <- data.frame(dat, c30scores)
+dat_scored
+```
+
+For more information on the `qlq_c30` function, you can access its "help" page
+by typing `?qlq_c30` into R.
+
+
+
+## Future Development Plans
+
+The *PROscorer* family of R packages includes *PROscorer*, *PROscorerTools*, and 
+[FACTscorer](https://CRAN.R-project.org/package=FACTscorer).  With repect to
+developing **PROscorer**, my priorties are:
+
+1.  Expand *PROscorer* with more scoring functions for specific PROs.  Some of
+the EORTC instruments are high on my list.
+
+2.  Further refine some behind-the-scenes standards for how the functions should
+be programmed, and write guides for users wishing to program and contribute
+their own PRO scoring funcions to *PROscorer*.
+
+3.  Finalize the collaborative infrastructure (e.g., on GitHub) by which users 
+can use *PROscorerTools* to write scoring functions for their favorite PROs and 
+submit them for inclusion in *PROscorer*.  A major component of this is to create
+a few instructional vignettes, including a step-by-step guide for writing the 
+scoring functions, guidelines for writing the instrument descriptions, and 
+templates for writing the function documentation.
+
+4.  Make the unit testing framework of *PROscorer* and *PROscorerTools* more
+comprehensive.  Most of the code underlying the 8 functions will be
+already be tested by the *PROscorerTools* tests; however, I intend to come up with
+a standard set of tests for *PROscorer* functions to make it easier for me and
+others to add unit tests to their scoring functions.
+
+5.  Write some educational vignettes on PRO scoring methods and best practices.
+
+6.  Add capability to generate IRT-based scores for PROs that use that scoring
+method.  I know many researchers that use various PROMIS measures.  They would
+prefer to use the IRT-based scoring method, but find it too difficult to
+integrate into their research workflow.  *PROscorer* could make IRT-based scores
+accessible to a much wider group of researchers.
+
+
+## Resources for More Information
+
+* You can access the "help" page for the **PROscorer** package by typing
+`?PROscorer` into R.
+
+* Supplemental documentation, including the Instrument Descriptions, can be
+found in the [PROscorer
+vignettes](https://CRAN.R-project.org/package=PROscorer).  You can access them
+from the [main PROscorer webpage on
+CRAN](https://CRAN.R-project.org/package=PROscorer).  More vignettes will be
+added in future updates.
+
+* If you need to score PRO measures from the the FACT (Functional Assessment of
+Cancer Therapy) and FACIT (Functional Assessment of Chronic Illness Therapy)
+family of measures, please see the [FACTscorer
+package](https://CRAN.R-project.org/package=FACTscorer).
+
+* The underlying code base of the
+[PROscorer](https://CRAN.R-project.org/package=PROscorer) package is built from
+functions from the [PROscorerTools
+package](https://CRAN.R-project.org/package=PROscorerTools).
+
+* The **PROscorerTools** documentation and vignettes might also be helpful.  You
+can access them from the [main PROscorerTools webpage on 
+CRAN](https://CRAN.R-project.org/package=PROscorerTools).  More vignettes will 
+be added in future updates.
+  
+* If you have any feature requests, or you want to report bugs or other strange
+behavior in *PROscorer*, please submit them to me on the [PROscorer
+GitHub page](https://github.com/raybaser/PROscorer/issues).
