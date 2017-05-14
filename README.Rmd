@@ -11,6 +11,11 @@ knitr::opts_chunk$set(
   fig.path = "README-"
 )
 ```
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/PROscorer)](https://cran.r-project.org/package=PROscorer)
+
+[![Travis-CI Build Status](https://travis-ci.org/raybaser/PROscorer.svg?branch=master)](https://travis-ci.org/raybaser/PROscorer)
+
+[![Coverage Status](https://img.shields.io/codecov/c/github/raybaser/PROscorer/master.svg)](https://codecov.io/github/raybaser/PROscorer?branch=master)
 
 # PROscorer README
 

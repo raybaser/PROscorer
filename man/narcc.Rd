@@ -103,7 +103,7 @@ narcc(ccdat, items = cc_names, whichScale = "CC")
 \references{
 Hay, JL, Baser, R, Weinstein, ND, Li, Y, Primavera, L, & Kemeny, MM. (2014).
 Examining intuitive risk perceptions for cancer in diverse populations.
-\emph{Health, Risk & Society, 16}(3), 227–242.
+\emph{Health, Risk & Society, 16}(3), 227-242.
 
 Baser, RE, Li, Y, Brennessel, D, Kemeny, MM, & Hay, JL. (2016). Measurement
 Invariance of Intuitive Cancer Risk Perceptions Across Diverse Populations:

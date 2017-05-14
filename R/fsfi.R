@@ -20,7 +20,7 @@
 #'
 #' @details
 #' This function returns the 6 subscale scores and the FSFI Total score (Rosen
-#' et al., 2000), as well as an indicator variable flagging repondents with FSFI
+#' et al., 2000), as well as an indicator variable flagging respondents with FSFI
 #' Total scores suggestive of clinically significant levels of sexual
 #' dysfunction (i.e., \code{fsfi_tot <= 26.55}; Wiegel et al., 2005).
 #'
@@ -58,7 +58,7 @@
 #' scores, the \code{fsfi} function handles missing items similarly to the
 #' scoring methods for many other PROs.  Specifically, the \code{fsfi} function
 #' will calculate the 6 subscale scores as long as at least half of the items on
-#' the given subscale have valid, non-mising item responses.  More concretely,
+#' the given subscale have valid, non-missing item responses.  More concretely,
 #' each subscale must have at least 2 non-missing responses, except for Desire,
 #' which has only 2 items and requires only 1 non-missing response.  The
 #' \code{fsfi} function will calculate the FSFI Total Score for a respondent as
@@ -111,18 +111,18 @@
 #'   subscale, and the FSFI Total score is greater than zero.
 #'
 #' @references
-#' Rosen, R, Brown, C, Heiman, J, Leiblum, S, Meston, C, Shabsigh, R, …
-#' D’Agostino, R. (2000). The Female Sexual Function Index (FSFI): a
-#' multidimensional self-report instrument for the assessment of female sexual
-#' function. \emph{Journal of Sex & Marital Therapy, 26}(2), 191–208.
+#' Rosen, R, Brown, C, Heiman, J, Leiblum, S, Meston, C, Shabsigh, R, et al.
+#' (2000). The Female Sexual Function Index (FSFI): a multidimensional
+#' self-report instrument for the assessment of female sexual function.
+#' \emph{Journal of Sex & Marital Therapy, 26}(2), 191-208.
 #'
 #' Wiegel, M, Meston, C, & Rosen, R. (2005). The Female Sexual Function Index
 #' (FSFI): Cross-Validation and Development of Clinical Cutoff Scores.
-#' \emph{Journal of Sex & Marital Therapy, 31}(1), 1–20.
+#' \emph{Journal of Sex & Marital Therapy, 31}(1), 1-20.
 #'
 #' Baser, RE, Li, Y, & Carter, J. (2012). Psychometric validation of the female
 #' sexual function index (FSFI) in cancer survivors. \emph{Cancer, 118}(18),
-#' 4606–4618.
+#' 4606-4618.
 #'
 #' @export
 #'

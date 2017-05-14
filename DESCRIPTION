@@ -32,7 +32,9 @@ BugReports: http://github.com/raybaser/PROscorer/issues
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.0.1
 Imports: PROscorerTools
+Remotes: raybaser/PROscorerTools
 Suggests: knitr,
     rmarkdown,
-    testthat
+    testthat,
+    covr
 VignetteBuilder: knitr

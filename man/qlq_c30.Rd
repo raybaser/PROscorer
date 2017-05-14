@@ -107,7 +107,7 @@ using the \code{items} argument.  For example, if your first 10
 variables in \code{df} contain demographics, followed by the 30 QLQ-C30
 items \strong{in order} starting with the 11th variable, then you could
 use \code{items = 11:40}.
-\item The last way only applies if your data frame (\code{df}) containly
+\item The last way only applies if your data frame (\code{df}) contains
 \strong{ONLY} the 30 variables corresponding to the 30 QLQ-C30 items,
 in order, with no other non-QLQ-C30 variables.  In this case, you can
 just use the \code{df} argument and omit \code{iprefix} and
@@ -131,14 +131,14 @@ Role Functioning scale 'QL2', 'PF2', and 'RF2', respectively, to indicate
 that these are revised versions of these scales.  However, this clashes
 with the naming convention that many statisticians use for longitudinal
 assessments (e.g., where 'QL2' would be used to indicate the second 'QL'
-asssessment).  As such, this function drops the '2' suffix from these
+assessment).  As such, this function drops the '2' suffix from these
 scale names.
 }
 }
 \section{How Missing Data is Handled}{
 
 The \code{qlq_c30} function will calculate the scale scores as long as at
-least half of the items on the given scale have valid, non-mising item
+least half of the items on the given scale have valid, non-missing item
 responses.  The \code{qlq_c30} function will calculate the QLQ-C30 Summary
 Score (\code{C30SUMMARY}) for a respondent only if all 13 scales contributing to
 that score are non-missing.  Scores calculated in the presence of missing
@@ -156,7 +156,7 @@ A, Flechtner H, Fleishman SB, Haes JCJM de, Kaasa S, Klee M, Osoba D, Razavi
 D, Rofe PB, Schraub S, Sneeuw K, Sullivan M, Takeda F (1993). The European
 Organization for Research and Treatment of Cancer QLQ-C30: A Quality-of-Life
 Instrument for Use in International Clinical Trials in Oncology. \emph{JNCI J
-Natl Cancer Inst 85}:365–376.
+Natl Cancer Inst 85}:365-376.
 
 Fayers PM, Aaronson NK, Bjordal K, Groenvold M, Curran D, Bottomley A, on
 behalf of the EORTC Quality of Life Group. \emph{The EORTC QLQ-C30 Scoring
@@ -166,5 +166,5 @@ Treatment of Cancer, Brussels 2001.
 Giesinger JM, Kieffer JM, Fayers PM, Groenvold M, Petersen MA, Scott NW,
 Sprangers MAG, Velikova G, Aaronson NK (2016). Replication and validation of
 higher order models demonstrated that a summary score for the EORTC QLQ-C30
-is robust. \emph{Journal of Clinical Epidemiology 69}:79–88.
+is robust. \emph{Journal of Clinical Epidemiology 69}:79-88.
 }
