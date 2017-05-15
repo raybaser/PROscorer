@@ -19,7 +19,9 @@ specific patient-reported outcome (PRO), quality of life (QoL), and other
 psychometric measures and questionnaire-based instruments commonly used in
 research.
 
-(Note: For simplicity, from here forward I will collectively and somewhat imprecisely refer to these types of instruments as "PRO measures", "PRO-like instruments", or just "PROs".)
+(Note: For simplicity, from here forward I will collectively and somewhat
+imprecisely refer to these types of instruments as "PRO measures", "PRO-like
+instruments", or just "PROs".)
 
 Recent efforts by International Society for Quality of Life Research (ISOQOL) 
 taskforces have sought to standardize the reporting, analysis, and protocol 
@@ -196,8 +198,10 @@ by typing `?qlq_c30` into R.
 
 ## Future Development Plans
 
-The *PROscorer* family of R packages includes *PROscorer*, *PROscorerTools*, and 
-[FACTscorer](https://CRAN.R-project.org/package=FACTscorer).  With repect to
+The *PROscorer* family of R packages includes
+[PROscorer](https://CRAN.R-project.org/package=PROscorer),
+[PROscorerTools](https://CRAN.R-project.org/package=PROscorerTools), and 
+[FACTscorer](https://CRAN.R-project.org/package=FACTscorer).  With repect to 
 developing **PROscorer**, my priorties are:
 
 1.  Expand *PROscorer* with more scoring functions for specific PROs.  Some of
@@ -209,15 +213,15 @@ their own PRO scoring funcions to *PROscorer*.
 
 3.  Finalize the collaborative infrastructure (e.g., on GitHub) by which users 
 can use *PROscorerTools* to write scoring functions for their favorite PROs and 
-submit them for inclusion in *PROscorer*.  A major component of this is to create
-a few instructional vignettes, including a step-by-step guide for writing the 
-scoring functions, guidelines for writing the instrument descriptions, and 
+submit them for inclusion in *PROscorer*.  A major component of this is to
+create a few instructional vignettes, including a step-by-step guide for writing
+the scoring functions, guidelines for writing the instrument descriptions, and 
 templates for writing the function documentation.
 
-4.  Make the unit testing framework of *PROscorer* and *PROscorerTools* more
-comprehensive.  Most of the code underlying the 8 functions will be
-already be tested by the *PROscorerTools* tests; however, I intend to come up with
-a standard set of tests for *PROscorer* functions to make it easier for me and
+4.  Make the unit testing framework of *PROscorer* and *PROscorerTools* more 
+comprehensive.  Most of the code underlying the 8 functions will be already be
+tested by the *PROscorerTools* tests; however, I intend to come up with a
+standard set of tests for *PROscorer* functions to make it easier for me and 
 others to add unit tests to their scoring functions.
 
 5.  Write some educational vignettes on PRO scoring methods and best practices.
@@ -246,13 +250,13 @@ Cancer Therapy) and FACIT (Functional Assessment of Chronic Illness Therapy)
 family of measures, please see the [FACTscorer
 package](https://CRAN.R-project.org/package=FACTscorer).
 
-* The underlying code base of the
-[PROscorer](https://CRAN.R-project.org/package=PROscorer) package is built from
-functions from the [PROscorerTools
+* The underlying code base of the 
+[PROscorer](https://CRAN.R-project.org/package=PROscorer) package is built from 
+functions from the [PROscorerTools 
 package](https://CRAN.R-project.org/package=PROscorerTools).
 
 * The **PROscorerTools** documentation and vignettes might also be helpful.  You
-can access them from the [main PROscorerTools webpage on 
+can access them from the main [PROscorerTools webpage on 
 CRAN](https://CRAN.R-project.org/package=PROscorerTools).  More vignettes will 
 be added in future updates.
   

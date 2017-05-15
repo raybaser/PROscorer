@@ -86,7 +86,11 @@ Load PROscorer into your R workspace with the following:
 library(PROscorer)
 ```
 
-As an example, we will use the `makeFakeData` function from the PROscorerTools package to make fake item responses to the EORTC QLQ-C30 quality of life questionnaire. The created data set (named "dat") has an "id" variable, plus responses to 30 items (named "q1", "q2", etc.) from 20 imaginary respondents.  There are also missing responses ("NA") scattered throughout.  
+As an example, we will use the `makeFakeData` function from the PROscorerTools
+package to make fake item responses to the EORTC QLQ-C30 quality of life
+questionnaire. The created data set (named "dat") has an "id" variable, plus
+responses to 30 items (named "q1", "q2", etc.) from 20 imaginary respondents. 
+There are also missing responses ("NA") scattered throughout.
 
 ```{r eval=FALSE}
 dat <- PROscorerTools::makeFakeData(n = 20, nitems = 30, values = 1:4, id = TRUE)
@@ -135,12 +139,12 @@ into R.
 
 * For more detailed information on 'PROscorer', including future development 
 plans, please see the [Introduction to PROscorer 
-vignette](https://cran.r-project.org/web/packages/PROscorer/vignettes/intro-to-PROscorer.html).
+vignette](https://cran.r-project.org/web/packages/PROscorer/vignettes/intro-to-proscorer.html).
 
 * You might find the [other PROscorer
 vignettes](https://CRAN.R-project.org/package=PROscorer) helpful, too.  You can
 access them from the [main PROscorer webpage on
-CRAN](https://CRAN.R-project.org/package=PROscorer).
+CRAN](https://CRAN.R-project.org/package=PROscorer).  
 
 * The underlying code base of the
 [PROscorer](https://CRAN.R-project.org/package=PROscorer) package is built from

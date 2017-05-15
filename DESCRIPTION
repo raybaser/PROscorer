@@ -2,7 +2,7 @@ Package: PROscorer
 Type: Package
 Title: Functions to Score Commonly-Used Patient-Reported Outcome (PRO) 
     Measures and Other Psychometric Instruments
-Version: 0.0.0.9002
+Version: 0.0.1
 Authors@R: person("Ray", "Baser", email="ray.stats@gmail.com", role=c("aut", "cre"))
 Description: An extensible repository of accurate, up-to-date functions to score 
     commonly used patient-reported outcome (PRO), quality of life (QoL), and 
@@ -32,7 +32,6 @@ BugReports: http://github.com/raybaser/PROscorer/issues
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.0.1
 Imports: PROscorerTools
-Remotes: raybaser/PROscorerTools
 Suggests: knitr,
     rmarkdown,
     testthat,

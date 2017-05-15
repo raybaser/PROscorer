@@ -12,7 +12,7 @@
 
 <meta name="author" content="Ray Baser" />
 
-<meta name="date" content="2017-05-09" />
+<meta name="date" content="2017-05-15" />
 
 <title>Introduction to PROscorer</title>
 
@@ -70,7 +70,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <h1 class="title toc-ignore">Introduction to PROscorer</h1>
 <h4 class="author"><em>Ray Baser</em></h4>
-<h4 class="date"><em>2017-05-09</em></h4>
+<h4 class="date"><em>2017-05-15</em></h4>
 
 
 <div id="TOC">
@@ -133,7 +133,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>Load <em>PROscorer</em> into your R workspace with the following:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(PROscorer)</code></pre></div>
 <p>As an example, we will use the <code>makeFakeData</code> function from the <em>PROscorerTools</em> package to make fake item responses to the EORTC QLQ-C30 quality of life questionnaire. The created data set (named “dat”) has an “id” variable, plus responses to 30 items (named “q1”, “q2”, etc.) from 20 imaginary respondents. There are also missing responses (“NA”) scattered throughout.</p>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dat &lt;-<span class="st"> </span>PROscorerTools::<span class="kw">makeFakeData</span>(<span class="dt">n =</span> <span class="dv">20</span>, <span class="dt">nitems =</span> <span class="dv">30</span>, <span class="dt">values =</span> <span class="dv">1</span>:<span class="dv">4</span>, <span class="dt">id =</span> <span class="ot">TRUE</span>)
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">dat &lt;-<span class="st"> </span>PROscorerTools<span class="op">::</span><span class="kw">makeFakeData</span>(<span class="dt">n =</span> <span class="dv">20</span>, <span class="dt">nitems =</span> <span class="dv">30</span>, <span class="dt">values =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">4</span>, <span class="dt">id =</span> <span class="ot">TRUE</span>)
 dat</code></pre></div>
 <p>Below we will use the <code>qlq_c30</code> function to score the fake responses in “dat”. We will save the scores from the EORTC QLQ-C30 questionnaire in a data frame named “c30scores”.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">c30scores &lt;-<span class="st"> </span><span class="kw">qlq_c30</span>(dat, <span class="st">'q'</span>)
@@ -149,7 +149,7 @@ dat_scored</code></pre></div>
 </div>
 <div id="future-development-plans" class="section level2">
 <h2>Future Development Plans</h2>
-<p>The <em>PROscorer</em> family of R packages includes <em>PROscorer</em>, <em>PROscorerTools</em>, and <a href="https://CRAN.R-project.org/package=FACTscorer">FACTscorer</a>. With repect to developing <strong>PROscorer</strong>, my priorties are:</p>
+<p>The <em>PROscorer</em> family of R packages includes <a href="https://CRAN.R-project.org/package=PROscorer">PROscorer</a>, <a href="https://CRAN.R-project.org/package=PROscorerTools">PROscorerTools</a>, and <a href="https://CRAN.R-project.org/package=FACTscorer">FACTscorer</a>. With repect to developing <strong>PROscorer</strong>, my priorties are:</p>
 <ol style="list-style-type: decimal">
 <li><p>Expand <em>PROscorer</em> with more scoring functions for specific PROs. Some of the EORTC instruments are high on my list.</p></li>
 <li><p>Further refine some behind-the-scenes standards for how the functions should be programmed, and write guides for users wishing to program and contribute their own PRO scoring funcions to <em>PROscorer</em>.</p></li>
@@ -166,7 +166,7 @@ dat_scored</code></pre></div>
 <li><p>Supplemental documentation, including the Instrument Descriptions, can be found in the <a href="https://CRAN.R-project.org/package=PROscorer">PROscorer vignettes</a>. You can access them from the <a href="https://CRAN.R-project.org/package=PROscorer">main PROscorer webpage on CRAN</a>. More vignettes will be added in future updates.</p></li>
 <li><p>If you need to score PRO measures from the the FACT (Functional Assessment of Cancer Therapy) and FACIT (Functional Assessment of Chronic Illness Therapy) family of measures, please see the <a href="https://CRAN.R-project.org/package=FACTscorer">FACTscorer package</a>.</p></li>
 <li><p>The underlying code base of the <a href="https://CRAN.R-project.org/package=PROscorer">PROscorer</a> package is built from functions from the <a href="https://CRAN.R-project.org/package=PROscorerTools">PROscorerTools package</a>.</p></li>
-<li><p>The <strong>PROscorerTools</strong> documentation and vignettes might also be helpful. You can access them from the <a href="https://CRAN.R-project.org/package=PROscorerTools">main PROscorerTools webpage on CRAN</a>. More vignettes will be added in future updates.</p></li>
+<li><p>The <strong>PROscorerTools</strong> documentation and vignettes might also be helpful. You can access them from the main <a href="https://CRAN.R-project.org/package=PROscorerTools">PROscorerTools webpage on CRAN</a>. More vignettes will be added in future updates.</p></li>
 <li><p>If you have any feature requests, or you want to report bugs or other strange behavior in <em>PROscorer</em>, please submit them to me on the <a href="https://github.com/raybaser/PROscorer/issues">PROscorer GitHub page</a>.</p></li>
 </ul>
 </div>
@@ -178,7 +178,7 @@ dat_scored</code></pre></div>
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
