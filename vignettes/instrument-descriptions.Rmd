@@ -70,7 +70,7 @@ DOIs soon):
   https://cran.r-project.org/package=PROscorer
   
   Baser, RE (2017). Descriptions of Instruments Scored by PROscorer. R Package
-  Vignette version 0.0.1. https://cran.r-project.org/web/packages/PROscorer/vignettes/instrument-descriptions.html
+  Vignette version 0.0.1. https://cran.r-project.org/package=PROscorer
 
 
 # Guidelines for Describing PRO Measures:

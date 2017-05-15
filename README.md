@@ -20,7 +20,7 @@ The *PROscorer* package is an extensible repository of functions to score specif
 
 Each function in the *PROscorer* package scores a different PRO measure. Functions are named using the initials of the PRO measure. For example, the `fsfi` function scores the Female Sexual Function Index (FSFI).
 
-*PROscorer* also comes with a vignette containing detailed descriptions of each of the instruments scored by PROscorer (see [PROscorer Instrument Descriptions](https://cran.r-project.org/web/packages/PROscorer/vignettes/instrument-descriptions.html)). The purpose of including these instrument descriptions, complete with references, is to help improve the descriptions of PRO measures in protocols, grants, and published results. In most cases, the descriptions can be used in research documents with little or no editing.
+*PROscorer* also comes with a vignette containing detailed descriptions of each of the instruments scored by PROscorer (see main [PROscorer](https://CRAN.R-project.org/package=PROscorer) page on CRAN). The purpose of including these instrument descriptions, complete with references, is to help improve the descriptions of PRO measures in protocols, grants, and published results. In most cases, the descriptions can be used in research documents with little or no editing.
 
 To minimize the possibility of scoring errors and other bugs, each *PROscorer* function is composed of simpler, well-tested "helper" functions from the [PROscorerTools](https://CRAN.R-project.org/package=PROscorerTools) package. This reliance on a small set of simple functions that have been thoroughly tested ensures that the underlying code base of *PROscorer* functions is bug-free, and that the scoring functions produce reliable, consistent, and accurate results.
 
@@ -77,9 +77,9 @@ Resources for More Information
 
 -   You can access the "help" page for "PROscorer" package by typing `?PROscorer` into R.
 
--   For more detailed information on 'PROscorer', including future development plans, please see the [Introduction to PROscorer vignette](https://cran.r-project.org/web/packages/PROscorer/vignettes/intro-to-PROscorer.html).
+-   For more detailed information on 'PROscorer', including future development plans, please see the Introduction to PROscorer vignette on the main [PROscorer](https://CRAN.R-project.org/package=PROscorer) page on CRAN.
 
--   You might find the [other PROscorer vignettes](https://CRAN.R-project.org/package=PROscorer) helpful, too. You can access them from the [main PROscorer webpage on CRAN](https://CRAN.R-project.org/package=PROscorer).
+-   You might find the [other PROscorer vignettes](https://CRAN.R-project.org/package=PROscorer) helpful, too. You can access them from the main [PROscorer](https://CRAN.R-project.org/package=PROscorer) webpage on CRAN.
 
 -   The underlying code base of the [PROscorer](https://CRAN.R-project.org/package=PROscorer) package is built from functions from the [PROscorerTools package](https://CRAN.R-project.org/package=PROscorerTools).
 

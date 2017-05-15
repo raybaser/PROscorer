@@ -5,7 +5,7 @@ Title: Functions to Score Commonly-Used Patient-Reported Outcome (PRO)
 Version: 0.0.1
 Authors@R: person("Ray", "Baser", email="ray.stats@gmail.com", role=c("aut", "cre"))
 Description: An extensible repository of accurate, up-to-date functions to score 
-    commonly used patient-reported outcome (PRO), quality of life (QoL), and 
+    commonly used patient-reported outcome (PRO), quality of life (QOL), and 
     other psychometric and psychological measures.  'PROscorer', together with 
     the 'PROscorerTools' package, is a system to facilitate the incorporation of 
     PRO measures into research studies and clinical settings in a scientifically 
@@ -14,16 +14,12 @@ Description: An extensible repository of accurate, up-to-date functions to score
     planning, scoring, and reporting of PRO-like measures in research.  
     The 'PROscorer' "Instrument Descriptions" vignette contains descriptions of 
     each instrument scored by 'PROscorer', complete with references.  These 
-    instrument descriptions are written according to specific guidelines to be 
-    suitable for inclusion in formal study protocol documents, grant proposals, 
-    and manuscript Method sections.  Each 'PROscorer' function is composed of 
-    helper functions from the 'PROscorerTools' package, and users are 
-    encouraged to contribute new functions to 'PROscorer'.  The goals of the 
-    'PROscorer' and 'PROscorerTools' packages are to draw attention to scoring 
-    and reporting best-practices and to help eliminate inaccurate and 
-    inconsistent scoring.  Feel free to contact me with questions or 
-    suggestions.  More scoring functions are currently in development and will
-    be added in future updates.
+    instrument descriptions are suitable for inclusion in formal study protocol 
+    documents, grant proposals, and manuscript Method sections.  Each 
+    'PROscorer' function is composed of helper functions from the 
+    'PROscorerTools' package, and users are encouraged to contribute new 
+    functions to 'PROscorer'.  More scoring functions are currently in 
+    development and will be added in future updates.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

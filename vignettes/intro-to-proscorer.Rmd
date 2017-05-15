@@ -36,13 +36,13 @@ Each function in the *PROscorer* package scores a different PRO measure.
 Functions are named using the initials of the PRO measure.  For example, the
 `fsfi` function scores the Female Sexual Function Index (FSFI).
 
-*PROscorer* also comes with a vignette containing detailed descriptions of each
-of the instruments scored by *PROscorer* (see [PROscorer Instrument 
-Descriptions](https://cran.r-project.org/web/packages/PROscorer/vignettes/instrument-descriptions.html)).
-The purpose of including these instrument descriptions, complete with 
-references, is to help improve the descriptions of PRO measures in protocols, 
-grants, and published results.  In most cases, the descriptions can
-be used in research documents with little or no editing.
+*PROscorer* also comes with a vignette containing detailed descriptions of each 
+of the instruments scored by *PROscorer* (see main
+[PROscorer](https://cran.r-project.org/package=PROscorer) page on CRAN). The
+purpose of including these instrument descriptions, complete with references, is
+to help improve the descriptions of PRO measures in protocols, grants, and
+published results.  In most cases, the descriptions can be used in research
+documents with little or no editing.
 
 To minimize the possibility of scoring errors and other bugs, each *PROscorer*
 function is composed of simpler, well-tested "helper" functions from the 
