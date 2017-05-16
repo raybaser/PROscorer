@@ -8,6 +8,7 @@
 0 errors | 0 warnings | 1 note
 
 * This is a new release.  My email address is correct.
+* The potential spelling error flagged in the DESCRIPTION is a false positive.
 
 ## Reverse dependencies
 
