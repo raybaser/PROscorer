@@ -198,10 +198,17 @@ fsfi <- function(df, iprefix = "fsfi", keepNvalid = FALSE)  {
   fsfi_sat[1] <- .4*fsfi_sat[1]
   fsfi_pain[1]     <- .4*fsfi_pain[1]
 
+
   scores   <- data.frame(fsfi_des[1], fsfi_arous[1], fsfi_lub[1],
                          fsfi_org[1], fsfi_sat[1], fsfi_pain[1])
   scores_N <- data.frame(fsfi_des[2], fsfi_arous[2], fsfi_lub[2],
                          fsfi_org[2], fsfi_sat[2], fsfi_pain[2])
+
+  ## fsfi_sat: Could have have values < 0.8 (the official floor) if missing an
+  ##   item (due to prorating + diff number of response options for the items).
+  ##   Fixing to have floor of 0.8.
+  scores$fsfi_sat[scores$fsfi_sat < 0.8] <- 0.8
+
 
   # FSFI Total Score: Non-missing if at least 5/6 subscales are non-missing
   nmiss_subscales 	  <- rowSums(apply(scores, 2, is.na))
