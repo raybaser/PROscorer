@@ -240,6 +240,9 @@ fsfi <- function(df, iprefix = "fsfi", keepNvalid = FALSE)  {
 #  scores$sexActiveFSFI[sexActive01 == 1] <- "active"
 #  scores$sexActiveFSFI[sexActive01 == 0] <- "inactive"
 
+  ## Assigning NA to fsfi_nzero15 and fsfi_sexactive01 when fsfi_tot_N == 0 (2017-10-13)
+  scores$fsfi_nzero15[scores_N$fsfi_tot_N == 0] <- NA
+  scores$fsfi_sexactive01[scores_N$fsfi_tot_N == 0] <- NA
   # scores$fsfi_sexactive01[is.na(scores$fsfi_tot)] <- NA
 
   if(keepNvalid) {

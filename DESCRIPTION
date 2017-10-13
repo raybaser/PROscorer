@@ -2,7 +2,7 @@ Package: PROscorer
 Type: Package
 Title: Functions to Score Commonly-Used Patient-Reported Outcome (PRO) 
     Measures and Other Psychometric Instruments
-Version: 0.0.1
+Version: 0.0.1.9002
 Authors@R: person("Ray", "Baser", email="ray.stats@gmail.com", role=c("aut", "cre"))
 Description: An extensible repository of accurate, up-to-date functions to score 
     commonly used patient-reported outcome (PRO), quality of life (QOL), and 
