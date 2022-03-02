@@ -201,15 +201,15 @@ by typing `?qlq_c30` into R.
 The *PROscorer* family of R packages includes
 [PROscorer](https://CRAN.R-project.org/package=PROscorer),
 [PROscorerTools](https://CRAN.R-project.org/package=PROscorerTools), and 
-[FACTscorer](https://CRAN.R-project.org/package=FACTscorer).  With repect to 
-developing **PROscorer**, my priorties are:
+[FACTscorer](https://CRAN.R-project.org/package=FACTscorer).  With respect to 
+developing **PROscorer**, my priorities are:
 
 1.  Expand *PROscorer* with more scoring functions for specific PROs.  Some of
 the EORTC instruments are high on my list.
 
 2.  Further refine some behind-the-scenes standards for how the functions should
 be programmed, and write guides for users wishing to program and contribute
-their own PRO scoring funcions to *PROscorer*.
+their own PRO scoring functions to *PROscorer*.
 
 3.  Finalize the collaborative infrastructure (e.g., on GitHub) by which users 
 can use *PROscorerTools* to write scoring functions for their favorite PROs and 

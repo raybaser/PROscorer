@@ -3,7 +3,6 @@
 \docType{package}
 \name{PROscorer}
 \alias{PROscorer}
-\alias{PROscorer-package}
 \title{PROscorer}
 \description{
 An open-source repository of functions to score specific

@@ -147,8 +147,11 @@ are identical to those from scores calculated from complete data.
 }
 
 \examples{
+
+\dontrun{
 dat <- PROscorerTools::makeFakeData(n = 10, nitems = 30, values = 1:4)
 qlq_c30(dat, 'q')
+}
 }
 \references{
 Aaronson NK, Ahmedzai S, Bergman B, Bullinger M, Cull A, Duez NJ, Filiberti

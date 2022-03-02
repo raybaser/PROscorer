@@ -1,35 +1,37 @@
-Package: PROscorer
 Type: Package
-Title: Functions to Score Commonly-Used Patient-Reported Outcome (PRO) 
+Package: PROscorer
+Title: Functions to Score Commonly-Used Patient-Reported Outcome (PRO)
     Measures and Other Psychometric Instruments
-Version: 0.0.1.9002
-Authors@R: person("Ray", "Baser", email="ray.stats@gmail.com", role=c("aut", "cre"))
-Description: An extensible repository of accurate, up-to-date functions to score 
-    commonly used patient-reported outcome (PRO), quality of life (QOL), and 
-    other psychometric and psychological measures.  'PROscorer', together with 
-    the 'PROscorerTools' package, is a system to facilitate the incorporation of 
-    PRO measures into research studies and clinical settings in a scientifically 
-    rigorous and reproducible manner.  These packages and their vignettes are 
-    intended to help establish and promote "best practices" to improve the 
-    planning, scoring, and reporting of PRO-like measures in research.  
-    The 'PROscorer' "Instrument Descriptions" vignette contains descriptions of 
-    each instrument scored by 'PROscorer', complete with references.  These 
-    instrument descriptions are suitable for inclusion in formal study protocol 
-    documents, grant proposals, and manuscript Method sections.  Each 
-    'PROscorer' function is composed of helper functions from the 
-    'PROscorerTools' package, and users are encouraged to contribute new 
-    functions to 'PROscorer'.  More scoring functions are currently in 
-    development and will be added in future updates.
+Version: 0.0.1.9003
+Authors@R: 
+    person("Ray", "Baser", , "ray.stats@gmail.com", role = c("aut", "cre"))
+Description: An extensible repository of accurate, up-to-date functions to
+    score commonly used patient-reported outcome (PRO), quality of life
+    (QOL), and other psychometric and psychological measures.
+    'PROscorer', together with the 'PROscorerTools' package, is a system
+    to facilitate the incorporation of PRO measures into research studies
+    and clinical settings in a scientifically rigorous and reproducible
+    manner.  These packages and their vignettes are intended to help
+    establish and promote "best practices" to improve the planning,
+    scoring, and reporting of PRO-like measures in research.  The
+    'PROscorer' "Instrument Descriptions" vignette contains descriptions
+    of each instrument scored by 'PROscorer', complete with references.
+    These instrument descriptions are suitable for inclusion in formal
+    study protocol documents, grant proposals, and manuscript Method
+    sections.  Each 'PROscorer' function is composed of helper functions
+    from the 'PROscorerTools' package, and users are encouraged to
+    contribute new functions to 'PROscorer'.  More scoring functions are
+    currently in development and will be added in future updates.
 License: MIT + file LICENSE
-Encoding: UTF-8
-LazyData: true
-URL: http://github.com/raybaser/PROscorer
-BugReports: http://github.com/raybaser/PROscorer/issues
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.0.1
+URL: https://github.com/raybaser/PROscorer
+BugReports: https://github.com/raybaser/PROscorer/issues
 Imports: PROscorerTools
 Suggests: knitr,
     rmarkdown,
     testthat,
     covr
-VignetteBuilder: knitr
+VignetteBuilder: 
+    knitr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2

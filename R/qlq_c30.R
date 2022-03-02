@@ -158,8 +158,11 @@
 #' @export
 #'
 #' @examples
+#'
+#' \dontrun{
 #' dat <- PROscorerTools::makeFakeData(n = 10, nitems = 30, values = 1:4)
 #' qlq_c30(dat, 'q')
+#' }
 
 qlq_c30 <- function(df, iprefix = NULL, items = NULL, keepNvalid = FALSE) {
 

@@ -5,8 +5,14 @@
 \title{Score the Cognitive Causation (CC) and Negative Affect in Risk (NAR)
 scales}
 \usage{
-narcc(df, items = NULL, whichScale, minmax = c(0, 3), okmiss = 0.5,
-  keepNvalid = FALSE)
+narcc(
+  df,
+  items = NULL,
+  whichScale,
+  minmax = c(0, 3),
+  okmiss = 0.5,
+  keepNvalid = FALSE
+)
 }
 \arguments{
 \item{df}{A data frame containing responses to the CC and/or NAR items, and
