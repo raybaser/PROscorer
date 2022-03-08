@@ -1,4 +1,4 @@
-# PROscorer 0.0.2 (2022-03-07)
+# PROscorer 0.0.2 (2022-03-08)
 
 * Updates to fix CRAN check errors. 
   * Commented out `qlq_c30` problematic tests and examples, for now.

@@ -3,8 +3,10 @@
 
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/PROscorer)](https://cran.r-project.org/package=PROscorer)
 
-[![Coverage
-Status](https://img.shields.io/codecov/c/github/raybaser/PROscorer/master.svg)](https://codecov.io/github/raybaser/PROscorer?branch=master)
+<!-- [![Coverage Status](https://img.shields.io/codecov/c/github/raybaser/PROscorer/master.svg)](https://codecov.io/github/raybaser/PROscorer?branch=master) -->
+
+[![Codecov test
+coverage](https://codecov.io/gh/raybaser/PROscorer/branch/master/graph/badge.svg)](https://app.codecov.io/gh/raybaser/PROscorer?branch=master)
 
 # PROscorer README
 
