@@ -1,27 +1,234 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <meta name="author" content="Ray Baser" />
 
-<meta name="date" content="2017-05-15" />
+<meta name="date" content="2022-03-08" />
 
 <title>Descriptions of Instruments Scored by PROscorer</title>
 
+<script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
+// be compatible with the behavior of Pandoc < 2.8).
+document.addEventListener('DOMContentLoaded', function(e) {
+  var hs = document.querySelectorAll("div.section[class*='level'] > :first-child");
+  var i, h, a;
+  for (i = 0; i < hs.length; i++) {
+    h = hs[i];
+    if (!/^h[1-6]$/i.test(h.tagName)) continue;  // it should be a header h1-h6
+    a = h.attributes;
+    while (a.length > 0) h.removeAttribute(a[0].name);
+  }
+});
+</script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 
 
 
 
-<link href="data:text/css;charset=utf-8,body%20%7B%0Abackground%2Dcolor%3A%20%23fff%3B%0Amargin%3A%201em%20auto%3B%0Amax%2Dwidth%3A%20700px%3B%0Aoverflow%3A%20visible%3B%0Apadding%2Dleft%3A%202em%3B%0Apadding%2Dright%3A%202em%3B%0Afont%2Dfamily%3A%20%22Open%20Sans%22%2C%20%22Helvetica%20Neue%22%2C%20Helvetica%2C%20Arial%2C%20sans%2Dserif%3B%0Afont%2Dsize%3A%2014px%3B%0Aline%2Dheight%3A%201%2E35%3B%0A%7D%0A%23header%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0A%23TOC%20%7B%0Aclear%3A%20both%3B%0Amargin%3A%200%200%2010px%2010px%3B%0Apadding%3A%204px%3B%0Awidth%3A%20400px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Aborder%2Dradius%3A%205px%3B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Afont%2Dsize%3A%2013px%3B%0Aline%2Dheight%3A%201%2E3%3B%0A%7D%0A%23TOC%20%2Etoctitle%20%7B%0Afont%2Dweight%3A%20bold%3B%0Afont%2Dsize%3A%2015px%3B%0Amargin%2Dleft%3A%205px%3B%0A%7D%0A%23TOC%20ul%20%7B%0Apadding%2Dleft%3A%2040px%3B%0Amargin%2Dleft%3A%20%2D1%2E5em%3B%0Amargin%2Dtop%3A%205px%3B%0Amargin%2Dbottom%3A%205px%3B%0A%7D%0A%23TOC%20ul%20ul%20%7B%0Amargin%2Dleft%3A%20%2D2em%3B%0A%7D%0A%23TOC%20li%20%7B%0Aline%2Dheight%3A%2016px%3B%0A%7D%0Atable%20%7B%0Amargin%3A%201em%20auto%3B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dcolor%3A%20%23DDDDDD%3B%0Aborder%2Dstyle%3A%20outset%3B%0Aborder%2Dcollapse%3A%20collapse%3B%0A%7D%0Atable%20th%20%7B%0Aborder%2Dwidth%3A%202px%3B%0Apadding%3A%205px%3B%0Aborder%2Dstyle%3A%20inset%3B%0A%7D%0Atable%20td%20%7B%0Aborder%2Dwidth%3A%201px%3B%0Aborder%2Dstyle%3A%20inset%3B%0Aline%2Dheight%3A%2018px%3B%0Apadding%3A%205px%205px%3B%0A%7D%0Atable%2C%20table%20th%2C%20table%20td%20%7B%0Aborder%2Dleft%2Dstyle%3A%20none%3B%0Aborder%2Dright%2Dstyle%3A%20none%3B%0A%7D%0Atable%20thead%2C%20table%20tr%2Eeven%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Ap%20%7B%0Amargin%3A%200%2E5em%200%3B%0A%7D%0Ablockquote%20%7B%0Abackground%2Dcolor%3A%20%23f6f6f6%3B%0Apadding%3A%200%2E25em%200%2E75em%3B%0A%7D%0Ahr%20%7B%0Aborder%2Dstyle%3A%20solid%3B%0Aborder%3A%20none%3B%0Aborder%2Dtop%3A%201px%20solid%20%23777%3B%0Amargin%3A%2028px%200%3B%0A%7D%0Adl%20%7B%0Amargin%2Dleft%3A%200%3B%0A%7D%0Adl%20dd%20%7B%0Amargin%2Dbottom%3A%2013px%3B%0Amargin%2Dleft%3A%2013px%3B%0A%7D%0Adl%20dt%20%7B%0Afont%2Dweight%3A%20bold%3B%0A%7D%0Aul%20%7B%0Amargin%2Dtop%3A%200%3B%0A%7D%0Aul%20li%20%7B%0Alist%2Dstyle%3A%20circle%20outside%3B%0A%7D%0Aul%20ul%20%7B%0Amargin%2Dbottom%3A%200%3B%0A%7D%0Apre%2C%20code%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0Aborder%2Dradius%3A%203px%3B%0Acolor%3A%20%23333%3B%0Awhite%2Dspace%3A%20pre%2Dwrap%3B%20%0A%7D%0Apre%20%7B%0Aborder%2Dradius%3A%203px%3B%0Amargin%3A%205px%200px%2010px%200px%3B%0Apadding%3A%2010px%3B%0A%7D%0Apre%3Anot%28%5Bclass%5D%29%20%7B%0Abackground%2Dcolor%3A%20%23f7f7f7%3B%0A%7D%0Acode%20%7B%0Afont%2Dfamily%3A%20Consolas%2C%20Monaco%2C%20%27Courier%20New%27%2C%20monospace%3B%0Afont%2Dsize%3A%2085%25%3B%0A%7D%0Ap%20%3E%20code%2C%20li%20%3E%20code%20%7B%0Apadding%3A%202px%200px%3B%0A%7D%0Adiv%2Efigure%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0Aimg%20%7B%0Abackground%2Dcolor%3A%20%23FFFFFF%3B%0Apadding%3A%202px%3B%0Aborder%3A%201px%20solid%20%23DDDDDD%3B%0Aborder%2Dradius%3A%203px%3B%0Aborder%3A%201px%20solid%20%23CCCCCC%3B%0Amargin%3A%200%205px%3B%0A%7D%0Ah1%20%7B%0Amargin%2Dtop%3A%200%3B%0Afont%2Dsize%3A%2035px%3B%0Aline%2Dheight%3A%2040px%3B%0A%7D%0Ah2%20%7B%0Aborder%2Dbottom%3A%204px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Apadding%2Dbottom%3A%202px%3B%0Afont%2Dsize%3A%20145%25%3B%0A%7D%0Ah3%20%7B%0Aborder%2Dbottom%3A%202px%20solid%20%23f7f7f7%3B%0Apadding%2Dtop%3A%2010px%3B%0Afont%2Dsize%3A%20120%25%3B%0A%7D%0Ah4%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23f7f7f7%3B%0Amargin%2Dleft%3A%208px%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Ah5%2C%20h6%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20%23ccc%3B%0Afont%2Dsize%3A%20105%25%3B%0A%7D%0Aa%20%7B%0Acolor%3A%20%230033dd%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0Aa%3Ahover%20%7B%0Acolor%3A%20%236666ff%3B%20%7D%0Aa%3Avisited%20%7B%0Acolor%3A%20%23800080%3B%20%7D%0Aa%3Avisited%3Ahover%20%7B%0Acolor%3A%20%23BB00BB%3B%20%7D%0Aa%5Bhref%5E%3D%22http%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0Aa%5Bhref%5E%3D%22https%3A%22%5D%20%7B%0Atext%2Ddecoration%3A%20underline%3B%20%7D%0A%0Acode%20%3E%20span%2Ekw%20%7B%20color%3A%20%23555%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Edt%20%7B%20color%3A%20%23902000%3B%20%7D%20%0Acode%20%3E%20span%2Edv%20%7B%20color%3A%20%2340a070%3B%20%7D%20%0Acode%20%3E%20span%2Ebn%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Efl%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Ech%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Est%20%7B%20color%3A%20%23d14%3B%20%7D%20%0Acode%20%3E%20span%2Eco%20%7B%20color%3A%20%23888888%3B%20font%2Dstyle%3A%20italic%3B%20%7D%20%0Acode%20%3E%20span%2Eot%20%7B%20color%3A%20%23007020%3B%20%7D%20%0Acode%20%3E%20span%2Eal%20%7B%20color%3A%20%23ff0000%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%0Acode%20%3E%20span%2Efu%20%7B%20color%3A%20%23900%3B%20font%2Dweight%3A%20bold%3B%20%7D%20%20code%20%3E%20span%2Eer%20%7B%20color%3A%20%23a61717%3B%20background%2Dcolor%3A%20%23e3d2d2%3B%20%7D%20%0A" rel="stylesheet" type="text/css" />
+
+
+<style type="text/css">body {
+background-color: #fff;
+margin: 1em auto;
+max-width: 700px;
+overflow: visible;
+padding-left: 2em;
+padding-right: 2em;
+font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.35;
+}
+#TOC {
+clear: both;
+margin: 0 0 10px 10px;
+padding: 4px;
+width: 400px;
+border: 1px solid #CCCCCC;
+border-radius: 5px;
+background-color: #f6f6f6;
+font-size: 13px;
+line-height: 1.3;
+}
+#TOC .toctitle {
+font-weight: bold;
+font-size: 15px;
+margin-left: 5px;
+}
+#TOC ul {
+padding-left: 40px;
+margin-left: -1.5em;
+margin-top: 5px;
+margin-bottom: 5px;
+}
+#TOC ul ul {
+margin-left: -2em;
+}
+#TOC li {
+line-height: 16px;
+}
+table {
+margin: 1em auto;
+border-width: 1px;
+border-color: #DDDDDD;
+border-style: outset;
+border-collapse: collapse;
+}
+table th {
+border-width: 2px;
+padding: 5px;
+border-style: inset;
+}
+table td {
+border-width: 1px;
+border-style: inset;
+line-height: 18px;
+padding: 5px 5px;
+}
+table, table th, table td {
+border-left-style: none;
+border-right-style: none;
+}
+table thead, table tr.even {
+background-color: #f7f7f7;
+}
+p {
+margin: 0.5em 0;
+}
+blockquote {
+background-color: #f6f6f6;
+padding: 0.25em 0.75em;
+}
+hr {
+border-style: solid;
+border: none;
+border-top: 1px solid #777;
+margin: 28px 0;
+}
+dl {
+margin-left: 0;
+}
+dl dd {
+margin-bottom: 13px;
+margin-left: 13px;
+}
+dl dt {
+font-weight: bold;
+}
+ul {
+margin-top: 0;
+}
+ul li {
+list-style: circle outside;
+}
+ul ul {
+margin-bottom: 0;
+}
+pre, code {
+background-color: #f7f7f7;
+border-radius: 3px;
+color: #333;
+white-space: pre-wrap; 
+}
+pre {
+border-radius: 3px;
+margin: 5px 0px 10px 0px;
+padding: 10px;
+}
+pre:not([class]) {
+background-color: #f7f7f7;
+}
+code {
+font-family: Consolas, Monaco, 'Courier New', monospace;
+font-size: 85%;
+}
+p > code, li > code {
+padding: 2px 0px;
+}
+div.figure {
+text-align: center;
+}
+img {
+background-color: #FFFFFF;
+padding: 2px;
+border: 1px solid #DDDDDD;
+border-radius: 3px;
+border: 1px solid #CCCCCC;
+margin: 0 5px;
+}
+h1 {
+margin-top: 0;
+font-size: 35px;
+line-height: 40px;
+}
+h2 {
+border-bottom: 4px solid #f7f7f7;
+padding-top: 10px;
+padding-bottom: 2px;
+font-size: 145%;
+}
+h3 {
+border-bottom: 2px solid #f7f7f7;
+padding-top: 10px;
+font-size: 120%;
+}
+h4 {
+border-bottom: 1px solid #f7f7f7;
+margin-left: 8px;
+font-size: 105%;
+}
+h5, h6 {
+border-bottom: 1px solid #ccc;
+font-size: 105%;
+}
+a {
+color: #0033dd;
+text-decoration: none;
+}
+a:hover {
+color: #6666ff; }
+a:visited {
+color: #800080; }
+a:visited:hover {
+color: #BB00BB; }
+a[href^="http:"] {
+text-decoration: underline; }
+a[href^="https:"] {
+text-decoration: underline; }
+
+code > span.kw { color: #555; font-weight: bold; } 
+code > span.dt { color: #902000; } 
+code > span.dv { color: #40a070; } 
+code > span.bn { color: #d14; } 
+code > span.fl { color: #d14; } 
+code > span.ch { color: #d14; } 
+code > span.st { color: #d14; } 
+code > span.co { color: #888888; font-style: italic; } 
+code > span.ot { color: #007020; } 
+code > span.al { color: #ff0000; font-weight: bold; } 
+code > span.fu { color: #900; font-weight: bold; } 
+code > span.er { color: #a61717; background-color: #e3d2d2; } 
+</style>
+
+
+
 
 </head>
 
@@ -30,112 +237,307 @@
 
 
 
-<h1 class="title toc-ignore">Descriptions of Instruments Scored by PROscorer</h1>
-<h4 class="author"><em>Ray Baser</em></h4>
-<h4 class="date"><em>2017-05-15</em></h4>
+<h1 class="title toc-ignore">Descriptions of Instruments Scored by
+PROscorer</h1>
+<h4 class="author">Ray Baser</h4>
+<h4 class="date">2022-03-08</h4>
 
 
 <div id="TOC">
 <ul>
 <li><a href="#introduction">Introduction:</a></li>
-<li><a href="#how-to-use-these-descriptions">How to Use These Descriptions:</a></li>
-<li><a href="#guidelines-for-describing-pro-measures">Guidelines for Describing PRO Measures:</a></li>
-<li><a href="#instrument-descriptions">Instrument Descriptions:</a><ul>
-<li><a href="#female-sexual-function-index-fsfi">Female Sexual Function Index (FSFI)</a></li>
-<li><a href="#cognitive-causation-cc-and-negative-affect-in-risk-nar">Cognitive Causation (CC) and Negative Affect in Risk (NAR)</a></li>
-<li><a href="#eortc-qlq-c30-version-3.0">EORTC QLQ-C30 (version 3.0)</a></li>
+<li><a href="#how-to-use-these-descriptions">How to Use These
+Descriptions:</a></li>
+<li><a href="#guidelines-for-describing-pro-measures">Guidelines for
+Describing PRO Measures:</a></li>
+<li><a href="#instrument-descriptions">Instrument Descriptions:</a>
+<ul>
+<li><a href="#female-sexual-function-index-fsfi">Female Sexual Function
+Index (FSFI)</a></li>
+<li><a href="#cognitive-causation-cc-and-negative-affect-in-risk-nar">Cognitive
+Causation (CC) and Negative Affect in Risk (NAR)</a></li>
+<li><a href="#eortc-qlq-c30-version-3.0">EORTC QLQ-C30 (version
+3.0)</a></li>
 </ul></li>
 </ul>
 </div>
 
 <div id="introduction" class="section level1">
 <h1>Introduction:</h1>
-<p>This vignette includes descriptions of the instruments scored by the <a href="cran.r-project.org/package=PROscorer">PROscorer</a> package.</p>
-<p><strong>PROBLEM:</strong> Patient reported outcome (PRO) measures and other PRO-like instruments are often poorly and inadequately described in formal research protocol documents and in published reports of study results.</p>
-<p><strong>CONSEQUENCES:</strong> In protocols, this makes it difficult or impossible to evaluate the suitability of the PRO measures as study outcomes, including whether the proposed analysis plans are appropriate. The same consequences apply to published study results. In addition, poor PRO measure descriptions in published studies hinder the ability interpret, replicate, and reproduce study results. Altogether, this impedes the scientific progress of research that relies upon PRO and similar measures.</p>
-<p><strong>SOLUTION:</strong> Create a repository of high-quality descriptions of specific PRO instruments (i.e., this vignette document), written according to explicit guidelines for describing PRO measures in research protocols and papers.</p>
-<p>This document is intended to ease the burden of writing research protocols and manuscripts for studies with quality of life (QOL) or other patient-reported outcome (PRO) measures as endpoints.</p>
-<p>The descriptions are written with sufficient detail to be included in formal research protocol documents that utilize the instruments as outcome measures. They are also suitable for the “Measures” subsection of manuscripts reporting the results of such studies (potentially with editing, to meet word limits). They were written with these purposes in mind, and follow the below <em>“Guidelines for Describing PRO Measures”</em> that I developed based on several sources of “best practices” for describing PRO measures (references coming soon) and on my personal experience as a protocol review committee chair at a large cancer center.</p>
+<p>This vignette includes descriptions of the instruments scored by the
+<a href="cran.r-project.org/package=PROscorer">PROscorer</a>
+package.</p>
+<p><strong>PROBLEM:</strong> Patient reported outcome (PRO) measures and
+other PRO-like instruments are often poorly and inadequately described
+in formal research protocol documents and in published reports of study
+results.</p>
+<p><strong>CONSEQUENCES:</strong> In protocols, this makes it difficult
+or impossible to evaluate the suitability of the PRO measures as study
+outcomes, including whether the proposed analysis plans are appropriate.
+The same consequences apply to published study results. In addition,
+poor PRO measure descriptions in published studies hinder the ability
+interpret, replicate, and reproduce study results. Altogether, this
+impedes the scientific progress of research that relies upon PRO and
+similar measures.</p>
+<p><strong>SOLUTION:</strong> Create a repository of high-quality
+descriptions of specific PRO instruments (i.e., this vignette document),
+written according to explicit guidelines for describing PRO measures in
+research protocols and papers.</p>
+<p>This document is intended to ease the burden of writing research
+protocols and manuscripts for studies with quality of life (QOL) or
+other patient-reported outcome (PRO) measures as endpoints.</p>
+<p>The descriptions are written with sufficient detail to be included in
+formal research protocol documents that utilize the instruments as
+outcome measures. They are also suitable for the “Measures” subsection
+of manuscripts reporting the results of such studies (potentially with
+editing, to meet word limits). They were written with these purposes in
+mind, and follow the below <em>“Guidelines for Describing PRO
+Measures”</em> that I developed based on several sources of “best
+practices” for describing PRO measures (references coming soon) and on
+my personal experience as a protocol review committee chair at a large
+cancer center.</p>
 </div>
 <div id="how-to-use-these-descriptions" class="section level1">
 <h1>How to Use These Descriptions:</h1>
-<p>Each instrument description is complete with relevant references. In most cases, the description can be copied and pasted directly into your document with only very minor modifications.</p>
+<p>Each instrument description is complete with relevant references. In
+most cases, the description can be copied and pasted directly into your
+document with only very minor modifications.</p>
 <p>The following modifications are needed:</p>
 <ul>
-<li><p>Move the references to the References section of the your document, and update in-text citation numbers accordingly.</p></li>
-<li><p>If not all of the scored scales of the instrument are of interest to the study objectives, then add a sentence indicating the focal scale scores.</p></li>
+<li><p>Move the references to the References section of the your
+document, and update in-text citation numbers accordingly.</p></li>
+<li><p>If not all of the scored scales of the instrument are of interest
+to the study objectives, then add a sentence indicating the focal scale
+scores.</p></li>
 </ul>
-<p>Please cite the PROscorer package and this vignette document (I hope to obtain DOIs soon):</p>
-<p>Baser, RE (2017). PROscorer: Scoring Functions for Patient-Reported Outcome (PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.1. <a href="https://cran.r-project.org/package=PROscorer" class="uri">https://cran.r-project.org/package=PROscorer</a></p>
-<p>Baser, RE (2017). Descriptions of Instruments Scored by PROscorer. R Package Vignette version 0.0.1. <a href="https://cran.r-project.org/package=PROscorer" class="uri">https://cran.r-project.org/package=PROscorer</a></p>
+<p>Please cite the PROscorer package and this vignette document (I hope
+to obtain DOIs soon):</p>
+<p>Baser, RE (2022). PROscorer: Scoring Functions for Patient-Reported
+Outcome (PRO) Measures and Other Psychometric Instruments. R Package
+Version 0.0.2. <a href="https://cran.r-project.org/package=PROscorer" class="uri">https://cran.r-project.org/package=PROscorer</a></p>
+<p>Baser, RE (2022). Descriptions of Instruments Scored by PROscorer. R
+Package Vignette version 0.0.2. <a href="https://cran.r-project.org/package=PROscorer" class="uri">https://cran.r-project.org/package=PROscorer</a></p>
 </div>
 <div id="guidelines-for-describing-pro-measures" class="section level1">
 <h1>Guidelines for Describing PRO Measures:</h1>
-<p>I developed the following guidelines during my years of service as a chair of the Biostatistics Protocol Review Committee at a large cancer treatment and research institution. If you would like to contribute a scoring function to the PROscorer package, please use these guidelines to write a description of your instrument. I plan to update these guidelines soon into a more user-friendly checklist, but this should get you started.</p>
+<p>I developed the following guidelines during my years of service as a
+chair of the Biostatistics Protocol Review Committee at a large cancer
+treatment and research institution. If you would like to contribute a
+scoring function to the PROscorer package, please use these guidelines
+to write a description of your instrument. I plan to update these
+guidelines soon into a more user-friendly checklist, but this should get
+you started.</p>
 <p>Information to Include in Descriptions of PRO Measures:</p>
 <ol style="list-style-type: decimal">
-<li><p>The total number of questions/items on the instrument(s), their response format (e.g., 5-point Likert scale, True/False, etc.), and the time period for which respondents are asked to consider each item (e.g., “In past week, how often …”).</p></li>
-<li><p>The names of any subscale scores that the instrument yields, descriptions of the specific constructs that each of these subscales are intended to measure, the number of items included on each subscale, the range of scores that is possible on each subscale, the interpretation of higher scores (e.g., higher scores indicate more/less severe symptom levels), and, if available, reliability coefficients (e.g., internal consistency, test-retest) for each subscale score and, if relevant, for the instrument’s total score.</p>
+<li><p>The total number of questions/items on the instrument(s), their
+response format (e.g., 5-point Likert scale, True/False, etc.), and the
+time period for which respondents are asked to consider each item (e.g.,
+“In past week, how often …”).</p></li>
+<li><p>The names of any subscale scores that the instrument yields,
+descriptions of the specific constructs that each of these subscales are
+intended to measure, the number of items included on each subscale, the
+range of scores that is possible on each subscale, the interpretation of
+higher scores (e.g., higher scores indicate more/less severe symptom
+levels), and, if available, reliability coefficients (e.g., internal
+consistency, test-retest) for each subscale score and, if relevant, for
+the instrument’s total score.</p>
 <ol style="list-style-type: lower-alpha">
-<li>If not all of the instrument’s scales are relevant to evaluating the study objective, please indicate which scale scores will be utilized.</li>
-<li>Many PROM scores have validated cut-points that divide the scores into 2 or more range categories believed to be clinically or diagnostically relevant. If the protocol PROM scores will be categorized, provide the score cut-points or ranges defining each category as well as the clinical interpretation of each category.</li>
+<li>If not all of the instrument’s scales are relevant to evaluating the
+study objective, please indicate which scale scores will be
+utilized.</li>
+<li>Many PROM scores have validated cut-points that divide the scores
+into 2 or more range categories believed to be clinically or
+diagnostically relevant. If the protocol PROM scores will be
+categorized, provide the score cut-points or ranges defining each
+category as well as the clinical interpretation of each category.</li>
 </ol></li>
-<li><p>The PROM’s scoring instructions, or a citation and reference to a publication containing the scoring instructions.</p>
+<li><p>The PROM’s scoring instructions, or a citation and reference to a
+publication containing the scoring instructions.</p>
 <ol style="list-style-type: lower-alpha">
-<li>A citation and reference to a publication containing the scoring instructions, if available, is sufficient. Often, the scoring instructions are included in the report of the PROM’s original psychometric validation.</li>
-<li>If the scoring instructions are unpublished, as might be the case with a newly developed PROM, they must be included in the protocol, possibly as an appendix.</li>
-<li>Please also cite the <em>PROscorer</em> R package and this vignette document (see previous section).</li>
+<li>A citation and reference to a publication containing the scoring
+instructions, if available, is sufficient. Often, the scoring
+instructions are included in the report of the PROM’s original
+psychometric validation.</li>
+<li>If the scoring instructions are unpublished, as might be the case
+with a newly developed PROM, they must be included in the protocol,
+possibly as an appendix.</li>
+<li>Please also cite the <em>PROscorer</em> R package and this vignette
+document (see previous section).</li>
 </ol></li>
-<li><p>Estimates of how long it will take study participants to complete each PROM, as well as an estimate of how long it will take them to complete the full battery of PROMs.</p></li>
+<li><p>Estimates of how long it will take study participants to complete
+each PROM, as well as an estimate of how long it will take them to
+complete the full battery of PROMs.</p></li>
 </ol>
 </div>
 <div id="instrument-descriptions" class="section level1">
 <h1>Instrument Descriptions:</h1>
 <div id="female-sexual-function-index-fsfi" class="section level2">
 <h2>Female Sexual Function Index (FSFI)</h2>
-<p>The <strong>Female Sexual Function Index (FSFI)</strong> is a multidimensional self-report measure of female sexual functioning<strong>[REF 1]</strong>. It asks women to rate its 19 items according to “the past 4 weeks” using a Likert-type response format. Four of the items are scored from 1 to 5, and fifteen are scored from 0 to 5 (with 0 corresponding to response option “Did not attempt intercourse”). It takes approximately 5-10 minutes to complete.</p>
-<p>In additional to the FSFI Total score, the FSFI produces 6 subscale scores corresponding to distinct sexual function domains: Desire (2 items), Arousal (4 items), Lubrication (4 items), Orgasm (3 items), Satisfaction (3 items), and Pain (3 items). The FSFI scoring algorithm sums the items on each subscale and then scales the sums so that each subscale has a maximum possible score of 6. The subscales have a minimum possible score of 0 except for Desire and Satisfaction, which have minimum possible scores of 1.2 and 0.8, respectively. This is because those two subscales contain the four items scored 1 to 5 (instead of 0 to 5). The FSFI total score is the sum of the 6 subscale scores and ranges from 2 to 36. Higher scores indicate better functioning for all scores. Accurate scoring for the FSFI is available in the <em>PROscorer</em> R package using the <strong><code>fsfi()</code></strong> function<strong>[REF 2]</strong>.</p>
-<p>The initial FSFI validation study<strong>[REF 1]</strong> reported excellent internal consistency reliability for the FSFI total score (Cronbach’s α = 0.97) and subscales (Cronbach’s α range = 0.89 to 0.96). A FSFI total score of 26.55 or less has been validated as a diagnostic cut off score suggestive of female sexual dysfunction<strong>[REF 3]</strong>. The FSFI has also been validated for assessing sexual function among sexually active female cancer survivors<strong>[REF 4]</strong>.</p>
+<p>The <strong>Female Sexual Function Index (FSFI)</strong> is a
+multidimensional self-report measure of female sexual
+functioning<strong>[REF 1]</strong>. It asks women to rate its 19 items
+according to “the past 4 weeks” using a Likert-type response format.
+Four of the items are scored from 1 to 5, and fifteen are scored from 0
+to 5 (with 0 corresponding to response option “Did not attempt
+intercourse”). It takes approximately 5-10 minutes to complete.</p>
+<p>In additional to the FSFI Total score, the FSFI produces 6 subscale
+scores corresponding to distinct sexual function domains: Desire (2
+items), Arousal (4 items), Lubrication (4 items), Orgasm (3 items),
+Satisfaction (3 items), and Pain (3 items). The FSFI scoring algorithm
+sums the items on each subscale and then scales the sums so that each
+subscale has a maximum possible score of 6. The subscales have a minimum
+possible score of 0 except for Desire and Satisfaction, which have
+minimum possible scores of 1.2 and 0.8, respectively. This is because
+those two subscales contain the four items scored 1 to 5 (instead of 0
+to 5). The FSFI total score is the sum of the 6 subscale scores and
+ranges from 2 to 36. Higher scores indicate better functioning for all
+scores. Accurate scoring for the FSFI is available in the
+<em>PROscorer</em> R package using the
+<strong><code>fsfi()</code></strong> function<strong>[REF
+2]</strong>.</p>
+<p>The initial FSFI validation study<strong>[REF 1]</strong> reported
+excellent internal consistency reliability for the FSFI total score
+(Cronbach’s α = 0.97) and subscales (Cronbach’s α range = 0.89 to 0.96).
+A FSFI total score of 26.55 or less has been validated as a diagnostic
+cut off score suggestive of female sexual dysfunction<strong>[REF
+3]</strong>. The FSFI has also been validated for assessing sexual
+function among sexually active female cancer survivors<strong>[REF
+4]</strong>.</p>
 <div id="references" class="section level4">
 <h4>REFERENCES:</h4>
 <ol style="list-style-type: decimal">
-<li><p>Rosen, R, Brown, C, Heiman, J, Leiblum, S, Meston, C, Shabsigh, R, … D’Agostino, R. (2000). The Female Sexual Function Index (FSFI): a multidimensional self-report instrument for the assessment of female sexual function. <em>Journal of Sex &amp; Marital Therapy</em>, 26(2), 191–208.</p></li>
-<li><p>Baser, RE (2016). PROscorer: Scoring Functions for Patient-Reported Outcome (PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.1.</p></li>
-<li><p>Wiegel, M, Meston, C, &amp; Rosen, R. (2005). The Female Sexual Function Index (FSFI): Cross-Validation and Development of Clinical Cutoff Scores. <em>Journal of Sex &amp; Marital Therapy</em>, 31(1), 1–20.</p></li>
-<li><p>Baser, RE, Li, Y, &amp; Carter, J. (2012). Psychometric validation of the female sexual function index (FSFI) in cancer survivors. <em>Cancer</em>, 118(18), 4606–4618.</p></li>
+<li><p>Rosen, R, Brown, C, Heiman, J, Leiblum, S, Meston, C, Shabsigh,
+R, … D’Agostino, R. (2000). The Female Sexual Function Index (FSFI): a
+multidimensional self-report instrument for the assessment of female
+sexual function. <em>Journal of Sex &amp; Marital Therapy</em>, 26(2),
+191–208.</p></li>
+<li><p>Baser, RE (2022). PROscorer: Scoring Functions for
+Patient-Reported Outcome (PRO) Measures and Other Psychometric
+Instruments. R Package Version 0.0.2.</p></li>
+<li><p>Wiegel, M, Meston, C, &amp; Rosen, R. (2005). The Female Sexual
+Function Index (FSFI): Cross-Validation and Development of Clinical
+Cutoff Scores. <em>Journal of Sex &amp; Marital Therapy</em>, 31(1),
+1–20.</p></li>
+<li><p>Baser, RE, Li, Y, &amp; Carter, J. (2012). Psychometric
+validation of the female sexual function index (FSFI) in cancer
+survivors. <em>Cancer</em>, 118(18), 4606–4618.</p></li>
 </ol>
 </div>
 </div>
 <div id="cognitive-causation-cc-and-negative-affect-in-risk-nar" class="section level2">
 <h2>Cognitive Causation (CC) and Negative Affect in Risk (NAR)</h2>
-<p>The <strong>Cognitive Causation (CC)</strong> and <strong>Negative Affect in Risk (NAR)</strong> scales are two new measures of intuitive, gut-level aspects of cancer risk perception<strong>[REF 1]</strong>. The CC scale measures the extent to which respondents believe that thoughts about cancer risk can encourage the development of the disease, and that minimizing such thoughts can actually reduce cancer risk. It originally contained 10 items<strong>[REF 1]</strong>, but it is recommended to score only 7 items<strong>[REF 2]</strong>. The NAR scale contains 6 items and measures negative anticipatory affect, or negative emotions (e.g., fear) generated during cancer risk information processing. Both the CC and NAR items have 4, Likert-type response options that are assigned numeric scores: Strongly Disagree = 0, Disagree = 1, Agree = 2, and Strongly Agree = 3. Each instrument takes approximately 2-5 minutes to complete.</p>
-<p>The preferred scoring method is to first calculate the mean of the item scores, and then transform that mean to range from 0 to 100. Higher scores indicate greater levels of the constructs being measured<strong>[REF 2]</strong>. A score should only be assigned to respondents who validly completed at least half of items on a given scale. The CC and NAR scales can be accurately scored using the <strong><code>narcc()</code></strong> function in the <em>PROscorer</em> R package <strong>[REF 3]</strong>.</p>
-<p>Both scales have had consistently high reliability across diverse samples, with Cronbach’s alpha coefficients all 0.89 or higher<strong>[REF 1]</strong>. The items have also demonstrated measurement invariance across highly diverse samples<strong>[REF 2]</strong>.</p>
+<p>The <strong>Cognitive Causation (CC)</strong> and <strong>Negative
+Affect in Risk (NAR)</strong> scales are two new measures of intuitive,
+gut-level aspects of cancer risk perception<strong>[REF 1]</strong>. The
+CC scale measures the extent to which respondents believe that thoughts
+about cancer risk can encourage the development of the disease, and that
+minimizing such thoughts can actually reduce cancer risk. It originally
+contained 10 items<strong>[REF 1]</strong>, but it is recommended to
+score only 7 items<strong>[REF 2]</strong>. The NAR scale contains 6
+items and measures negative anticipatory affect, or negative emotions
+(e.g., fear) generated during cancer risk information processing. Both
+the CC and NAR items have 4, Likert-type response options that are
+assigned numeric scores: Strongly Disagree = 0, Disagree = 1, Agree = 2,
+and Strongly Agree = 3. Each instrument takes approximately 2-5 minutes
+to complete.</p>
+<p>The preferred scoring method is to first calculate the mean of the
+item scores, and then transform that mean to range from 0 to 100. Higher
+scores indicate greater levels of the constructs being
+measured<strong>[REF 2]</strong>. A score should only be assigned to
+respondents who validly completed at least half of items on a given
+scale. The CC and NAR scales can be accurately scored using the
+<strong><code>narcc()</code></strong> function in the <em>PROscorer</em>
+R package <strong>[REF 3]</strong>.</p>
+<p>Both scales have had consistently high reliability across diverse
+samples, with Cronbach’s alpha coefficients all 0.89 or
+higher<strong>[REF 1]</strong>. The items have also demonstrated
+measurement invariance across highly diverse samples<strong>[REF
+2]</strong>.</p>
 <div id="references-1" class="section level4">
 <h4>REFERENCES:</h4>
 <ol style="list-style-type: decimal">
-<li><p>Hay, JL, Baser, R, Weinstein, ND, Li, Y, Primavera, L, &amp; Kemeny, MM. (2014). Examining intuitive risk perceptions for cancer in diverse populations. <em>Health, Risk &amp; Society</em>, 16(3), 227–242.</p></li>
-<li><p>Baser, RE, Li, Y, Brennessel, D, Kemeny, MM, &amp; Hay, JL. (2017). Measurement Invariance of Intuitive Cancer Risk Perceptions Across Diverse Populations: The Cognitive Causation and Negative Affect in Risk Scales. <em>Journal of Health Psychology</em>.</p></li>
-<li><p>Baser, RE (2016). PROscorer: Scoring Functions for Patient-Reported Outcome (PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.1.</p></li>
+<li><p>Hay, JL, Baser, R, Weinstein, ND, Li, Y, Primavera, L, &amp;
+Kemeny, MM. (2014). Examining intuitive risk perceptions for cancer in
+diverse populations. <em>Health, Risk &amp; Society</em>, 16(3),
+227–242.</p></li>
+<li><p>Baser, RE, Li, Y, Brennessel, D, Kemeny, MM, &amp; Hay, JL.
+(2017). Measurement Invariance of Intuitive Cancer Risk Perceptions
+Across Diverse Populations: The Cognitive Causation and Negative Affect
+in Risk Scales. <em>Journal of Health Psychology</em>.</p></li>
+<li><p>Baser, RE (2022). PROscorer: Scoring Functions for
+Patient-Reported Outcome (PRO) Measures and Other Psychometric
+Instruments. R Package Version 0.0.2.</p></li>
 </ol>
 </div>
 </div>
 <div id="eortc-qlq-c30-version-3.0" class="section level2">
 <h2>EORTC QLQ-C30 (version 3.0)</h2>
-<p>The European Organization for Research and Treatment of Cancer (EORTC) QLQ-C30 Quality of Life Questionnaire (version 3.0) is a 30-item questionnaire designed to assess the quality of life of cancer patients<strong>[REF 1]</strong>. The 30 items of the QLQ-C30 yield both multi-item scale scores and single-item scores, for a total of 16 distinct scores. These include one Global Health Status/QoL scale (2 items), five functional scales (Physical Functioning, 5 items; Role Functioning, 2 items; Emotional Functioning, 4 items; Cognitive Functioning, 2 items; and Social Functioning, 2 items), three symptom scales (Fatigue, 3 items; Nausea and Vomiting, 2 items; and Pain, 2 items), six single item symptom scores (Dyspnea, Insomnia, Appetite Loss, Constipation, Diarrhea, and Financial Difficulties; all from single items), and the more recently validated overall summary score (calculated from the other scores, excluding Global Health Status/QoL and Financial Difficulties)<strong>[REF 2]</strong>. The questionnaire asks patients to indicate the extent to which they have experienced each of the problems “during the past week” on a 4-point Likert-type scale from “Not at all” to “Very much”. The 2 exceptions are the 2 items of the Global Health Status/QoL scale, which patients are asked to rate on a 7-point scale from “Very poor” to “Excellent”.</p>
-<p>The scoring procedure for the QLQ-C30<strong>[REF 3]</strong> transforms all of the scale and single-item scores to range from 0 to 100. High scores for the Global Health Status/QoL scale represents high QoL, high scores for the functional scales represent high/healthy levels of functioning, but high scores for the symptom scales/items represent high levels of symptomatology/problems. The newer overall summary score also ranges from 0 to 100, with higher scores indicating better functioning and lower levels of symptoms. Accurate scoring for the EORTC QLQ-C30 (version 3.0), including the newer overall summary score, is available in the <em>PROscorer</em> R package using the <strong><code>qlq_c30()</code></strong> function<strong>[REF 4]</strong>. The QLQ-C30 has been extensively validated and is widely used in clinical trials. The multi-item scales generally have good internal consistency reliability coefficients<strong>[REF 1]</strong>.</p>
+<p>The European Organization for Research and Treatment of Cancer
+(EORTC) QLQ-C30 Quality of Life Questionnaire (version 3.0) is a 30-item
+questionnaire designed to assess the quality of life of cancer
+patients<strong>[REF 1]</strong>. The 30 items of the QLQ-C30 yield both
+multi-item scale scores and single-item scores, for a total of 16
+distinct scores. These include one Global Health Status/QoL scale (2
+items), five functional scales (Physical Functioning, 5 items; Role
+Functioning, 2 items; Emotional Functioning, 4 items; Cognitive
+Functioning, 2 items; and Social Functioning, 2 items), three symptom
+scales (Fatigue, 3 items; Nausea and Vomiting, 2 items; and Pain, 2
+items), six single item symptom scores (Dyspnea, Insomnia, Appetite
+Loss, Constipation, Diarrhea, and Financial Difficulties; all from
+single items), and the more recently validated overall summary score
+(calculated from the other scores, excluding Global Health Status/QoL
+and Financial Difficulties)<strong>[REF 2]</strong>. The questionnaire
+asks patients to indicate the extent to which they have experienced each
+of the problems “during the past week” on a 4-point Likert-type scale
+from “Not at all” to “Very much”. The 2 exceptions are the 2 items of
+the Global Health Status/QoL scale, which patients are asked to rate on
+a 7-point scale from “Very poor” to “Excellent”.</p>
+<p>The scoring procedure for the QLQ-C30<strong>[REF 3]</strong>
+transforms all of the scale and single-item scores to range from 0 to
+100. High scores for the Global Health Status/QoL scale represents high
+QoL, high scores for the functional scales represent high/healthy levels
+of functioning, but high scores for the symptom scales/items represent
+high levels of symptomatology/problems. The newer overall summary score
+also ranges from 0 to 100, with higher scores indicating better
+functioning and lower levels of symptoms. Accurate scoring for the EORTC
+QLQ-C30 (version 3.0), including the newer overall summary score, is
+available in the <em>PROscorer</em> R package using the
+<strong><code>qlq_c30()</code></strong> function<strong>[REF
+4]</strong>. The QLQ-C30 has been extensively validated and is widely
+used in clinical trials. The multi-item scales generally have good
+internal consistency reliability coefficients<strong>[REF
+1]</strong>.</p>
 <div id="references-2" class="section level4">
 <h4>REFERENCES:</h4>
 <ol style="list-style-type: decimal">
-<li><p>Aaronson NK, Ahmedzai S, Bergman B, Bullinger M, Cull A, Duez NJ, Filiberti A, Flechtner H, Fleishman SB, de Haes JCJM, Kaasa S, Klee MC, Osoba D, Razavi D, Rofe PB, Schraub S, Sneeuw KCA, Sullivan M, Takeda F (1993). The European Organisation for Research and Treatment of Cancer QLQ-C30: A quality-of-life instrument for use in international clinical trials in oncology. <em>Journal of the National Cancer Institute</em>, ; 85: 365-376.</p></li>
-<li><p>Giesinger JM, Kieffer JM, Fayers PM, Groenvold M, Petersen MA, Scott NW, Sprangers MAG, Velikova G, Aaronson NK (2016). Replication and validation of higher order models demonstrated that a summary score for the EORTC QLQ-C30 is robust. <em>Journal of Clinical Epidemiology 69</em>:79–88.</p></li>
-<li><p>Fayers PM, Aaronson NK, Bjordal K, Groenvold M, Curran D, Bottomley A, on behalf of the EORTC Quality of Life Group. <em>The EORTC QLQ-C30 Scoring Manual (3rd Edition)</em>. Published by: European Organisation for Research and Treatment of Cancer, Brussels 2001.</p></li>
-<li><p>Baser, RE (2016). PROscorer: Scoring Functions for Patient-Reported Outcome (PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.1.</p></li>
+<li><p>Aaronson NK, Ahmedzai S, Bergman B, Bullinger M, Cull A, Duez NJ,
+Filiberti A, Flechtner H, Fleishman SB, de Haes JCJM, Kaasa S, Klee MC,
+Osoba D, Razavi D, Rofe PB, Schraub S, Sneeuw KCA, Sullivan M, Takeda F
+(1993). The European Organisation for Research and Treatment of Cancer
+QLQ-C30: A quality-of-life instrument for use in international clinical
+trials in oncology. <em>Journal of the National Cancer Institute</em>, ;
+85: 365-376.</p></li>
+<li><p>Giesinger JM, Kieffer JM, Fayers PM, Groenvold M, Petersen MA,
+Scott NW, Sprangers MAG, Velikova G, Aaronson NK (2016). Replication and
+validation of higher order models demonstrated that a summary score for
+the EORTC QLQ-C30 is robust. <em>Journal of Clinical Epidemiology
+69</em>:79–88.</p></li>
+<li><p>Fayers PM, Aaronson NK, Bjordal K, Groenvold M, Curran D,
+Bottomley A, on behalf of the EORTC Quality of Life Group. <em>The EORTC
+QLQ-C30 Scoring Manual (3rd Edition)</em>. Published by: European
+Organisation for Research and Treatment of Cancer, Brussels
+2001.</p></li>
+<li><p>Baser, RE (2022). PROscorer: Scoring Functions for
+Patient-Reported Outcome (PRO) Measures and Other Psychometric
+Instruments. R Package Version 0.0.2.</p></li>
 </ol>
 </div>
 </div>
 </div>
 
+
+
+<!-- code folding -->
 
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

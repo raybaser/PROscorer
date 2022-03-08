@@ -201,7 +201,7 @@ by typing `?qlq_c30` into R.
 The *PROscorer* family of R packages includes
 [PROscorer](https://CRAN.R-project.org/package=PROscorer),
 [PROscorerTools](https://CRAN.R-project.org/package=PROscorerTools), and 
-[FACTscorer](https://CRAN.R-project.org/package=FACTscorer).  With respect to 
+[FACTscorer](https://github.com/raybaser/FACTscorer).  With respect to 
 developing **PROscorer**, my priorities are:
 
 1.  Expand *PROscorer* with more scoring functions for specific PROs.  Some of
@@ -248,7 +248,7 @@ added in future updates.
 * If you need to score PRO measures from the the FACT (Functional Assessment of
 Cancer Therapy) and FACIT (Functional Assessment of Chronic Illness Therapy)
 family of measures, please see the [FACTscorer
-package](https://CRAN.R-project.org/package=FACTscorer).
+package](https://github.com/raybaser/FACTscorer).
 
 * The underlying code base of the 
 [PROscorer](https://CRAN.R-project.org/package=PROscorer) package is built from 

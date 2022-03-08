@@ -150,7 +150,7 @@ For more information on the `qlq_c30` function, you can access its
 -   If you need to score PRO measures from the the FACT (Functional
     Assessment of Cancer Therapy) and FACIT (Functional Assessment of
     Chronic Illness Therapy) family of measures, please see the
-    [FACTscorer package](https://CRAN.R-project.org/package=FACTscorer).
+    [FACTscorer package](https://github.com/raybaser/FACTscorer).
 
 -   If you have any feature requests, or you want to report bugs or
     other strange behavior in *PROscorer*, please submit them to me on

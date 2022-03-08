@@ -6,9 +6,10 @@
 
 ## R CMD check results
 
-0 errors | 0 warnings | 0 notes
+0 errors | 0 warnings | 1 note
 
-* This release addresses issues, identified by CRAN checks, needed to retain this package on CRAN.
+* The 1 note is a false positive regarding a "(possibly) invalid file URI". I obtained this note only in the win-builder checks. My local and github actions checks had 0 notes.  
+* This release addresses CRAN check errors needed to retain this package on CRAN.
 * My email address is correct.  
 
 ## Reverse dependencies

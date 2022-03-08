@@ -65,12 +65,12 @@ study objectives, then add a sentence indicating the focal scale scores.
 Please cite the PROscorer package and this vignette document (I hope to obtain
 DOIs soon):
 
-  Baser, RE (2017). PROscorer: Scoring Functions for Patient-Reported Outcome
-  (PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.1.
+  Baser, RE (2022). PROscorer: Scoring Functions for Patient-Reported Outcome
+  (PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.2.
   https://cran.r-project.org/package=PROscorer
   
-  Baser, RE (2017). Descriptions of Instruments Scored by PROscorer. R Package
-  Vignette version 0.0.1. https://cran.r-project.org/package=PROscorer
+  Baser, RE (2022). Descriptions of Instruments Scored by PROscorer. R Package
+  Vignette version 0.0.2. https://cran.r-project.org/package=PROscorer
 
 
 # Guidelines for Describing PRO Measures:
@@ -158,8 +158,8 @@ D’Agostino, R. (2000). The Female Sexual Function Index (FSFI): a
 multidimensional self-report instrument for the assessment of female sexual
 function. _Journal of Sex & Marital Therapy_, 26(2), 191–208.
 
-2.  Baser, RE (2016). PROscorer: Scoring Functions for Patient-Reported Outcome
-(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.1.
+2.  Baser, RE (2022). PROscorer: Scoring Functions for Patient-Reported Outcome
+(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.2.
 
 3.  Wiegel, M, Meston, C, & Rosen, R. (2005). The Female Sexual Function Index
 (FSFI): Cross-Validation and Development of Clinical Cutoff Scores. _Journal of
@@ -207,8 +207,8 @@ Invariance of Intuitive Cancer Risk Perceptions Across Diverse Populations: The
 Cognitive Causation and Negative Affect in Risk Scales. _Journal of Health
 Psychology_.
 
-3.  Baser, RE (2016). PROscorer: Scoring Functions for Patient-Reported Outcome
-(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.1.
+3.  Baser, RE (2022). PROscorer: Scoring Functions for Patient-Reported Outcome
+(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.2.
 
 
 ## EORTC QLQ-C30 (version 3.0)
@@ -265,5 +265,5 @@ behalf of the EORTC Quality of Life Group.  _The EORTC QLQ-C30 Scoring Manual
 (3rd Edition)_.  Published by: European Organisation for Research and Treatment
 of Cancer, Brussels 2001.
 
-4.  Baser, RE (2016). PROscorer: Scoring Functions for Patient-Reported Outcome
-(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.1.
+4.  Baser, RE (2022). PROscorer: Scoring Functions for Patient-Reported Outcome
+(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.2.
