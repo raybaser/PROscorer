@@ -15,7 +15,7 @@ vignette: >
 # Introduction:
 
 This vignette includes descriptions of the instruments scored by the
-[PROscorer](cran.r-project.org/package=PROscorer) package.  
+[PROscorer](https://cran.r-project.org/package=PROscorer) package.  
 
 __PROBLEM:__ Patient reported outcome (PRO) measures and other PRO-like
 instruments are often poorly and inadequately described in formal research
