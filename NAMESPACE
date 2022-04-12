@@ -3,3 +3,4 @@
 export(fsfi)
 export(narcc)
 export(qlq_c30)
+export(qlq_pan26)
