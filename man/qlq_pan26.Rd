@@ -96,6 +96,20 @@ in order, with no other non-QLQ-PAN26 variables.  In this case, you can
 just use the \code{df} argument and omit \code{items}.
 }
 }
+\note{
+\strong{As of April 15, 2022, there is an error in the official PAN26 scoring
+instructions from the EORTC.}
+The first page of the official PAN26 scoring instructions from the EORTC
+indicates that the two items comprising the SA (Satisfaction with health
+care) functional scale should be reverse scored.  In the instructions, these
+two items are numbered as 53 and 54.  However, the second page of the
+instructions indicates items 55 and 56 should be reversed (see bullet, "(1)
+Raw score" in the "Principle for scoring" subsection).  Items 55 and 56
+comprise the SX (Sexuality) functional scale.
+\strong{The items that need to be reversed are the SX items (55 and 56), NOT
+the SA items (not 53 and 54).}  This function correctly reverses the SX items
+instead of the SA items.
+}
 \section{How Missing Data is Handled}{
 
 The \code{qlq_PAN26} function will calculate the scale scores as long as at
