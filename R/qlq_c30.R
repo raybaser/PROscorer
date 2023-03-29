@@ -26,6 +26,7 @@
 #'   this argument entirely.  This argument might be removed from future
 #'   versions of the package, so please let me know if you think this argument
 #'   useful and would rather it remain a part of the function.
+#' @param keep_data Logical, whether to keep the original dataframe in the output
 #'
 #'
 #' @details
@@ -164,7 +165,7 @@
 #' qlq_c30(dat, 'q')
 #' }
 
-qlq_c30 <- function(df, iprefix = NULL, items = NULL, keepNvalid = FALSE) {
+qlq_c30 <- function(df, iprefix = NULL, items = NULL, keepNvalid = FALSE, keep_data = FALSE) {
 
 # Check arguments that are unique to qlq_c30,
 # or that require additional checks not already done by scoreScale().
@@ -397,5 +398,8 @@ qlq_c30 <- function(df, iprefix = NULL, items = NULL, keepNvalid = FALSE) {
                   scalename = "QLQTOTAL" )
 
   scoreDF <- data.frame(scoreDF, QLQTOTAL)
+  if(isTRUE(keep_data)){
+    scoreDF <- cbind(df, scoreDF)
+  }
   return(scoreDF)
 }
