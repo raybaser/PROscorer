@@ -9,9 +9,7 @@
 #'   possibly other variables.
 #' @param items A character vector with the QLQ-PAN26 item names, or a numeric
 #'   vector indicating the column numbers of the QLQ-PAN26 items in \code{df}.
-#'   Use either this \code{items} argument or the \code{iprefix} argument (but
-#'   NOT BOTH) to tell the function which variables in \code{df} are the QLQ-PAN26
-#'   items. If \code{items} is omitted, then \code{qlq_PAN26} will assume that
+#'   If \code{items} is omitted, then \code{qlq_PAN26} will assume that
 #'   \code{df} contains \strong{ONLY} the QLQ-PAN26 items and no other variables.
 #'   See Details for more information.
 #' @param keepNvalid Logical, whether to return variables containing the
@@ -39,9 +37,9 @@
 #'   \enumerate{
 #'     \item The first way is to manually provide the item names or locations
 #'       using the \code{items} argument.  For example, if your first 10
-#'       variables in \code{df} contain demographics, followed by the 30 QLQ-PAN26
+#'       variables in \code{df} contain demographics, followed by the 26 QLQ-PAN26
 #'       items \strong{in order} starting with the 11th variable, then you could
-#'       use \code{items = 11:40}.
+#'       use \code{items = 11:36}.
 #'     \item The second way only applies if your data frame (\code{df}) contains
 #'       \strong{ONLY} the 26 variables corresponding to the 26 QLQ-PAN26 items,
 #'       in order, with no other non-QLQ-PAN26 variables.  In this case, you can
@@ -78,7 +76,7 @@
 #' the 15 Symptom Scales, 10 are based on a single item each.  All scores are
 #' scaled to range from 0-100, even scores based on single items.  Be aware that
 #' these single-item scales still have only 4 possible values, even though they
-#' are transformed to range from 0-100.  The scale name and number of items are
+#' are transformed to range from 0-100.  The scale names and numbers of items are
 #' listed below.
 #'
 #' \strong{Symptom Scales (higher is more symptoms, worse functioning)}
@@ -134,26 +132,6 @@ qlq_pan26 <- function(df, items = NULL, keepNvalid = FALSE) {
 
   # Check arguments that are unique to qlq_pan26,
   # or that require additional checks not already done by scoreScale().
-
-  ##----------------------------------------------------------------------------##
-  ##----------------------------------------------------------------------------##
-  ## RAY: Need to write a check for correct number of items when iprefix is used.
-  ##      Do before using get_dfItems().
-  ## Currently:
-  ##      (1) if user has > 30 items with the prefix, function runs normally
-  ##      (2) if user has < 30 items with the prefix, a base R error occurs
-  ## Instead, I want:
-  ##      (1) > 30 items with prefix: warning RE possible data problem
-  ##      (2) < 30 items with prefix: stop with helpful, custom error message
-  ## TODO:
-  ##      After making items (vector of item names), check for matches in names(df)
-  ##        - If not all find a match, stop with a helpful error msg
-  ##      Then make extra item names for nitems+100, check if any names(df) match
-  ##        - If so, give a warning describing the situation
-  ##      OR... Use regex to get all names in df matching iprefix# pattern
-  ##        - Check if length of that vector is <, =, or > nitems.
-  ##----------------------------------------------------------------------------##
-  ##----------------------------------------------------------------------------##
 
 
   #  Get dfItems, a df with only the items -------------------------------------

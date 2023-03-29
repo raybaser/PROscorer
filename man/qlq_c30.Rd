@@ -21,9 +21,9 @@ items. See Details for more information.}
 vector indicating the column numbers of the QLQ-C30 items in \code{df}.
 Use either this \code{items} argument or the \code{iprefix} argument (but
 NOT BOTH) to tell the function which variables in \code{df} are the QLQ-C30
-items. If \code{items} is omitted, then \code{qlq_c30} will assume that
-\code{df} contains \strong{ONLY} the QLQ-C30 items and no other variables.
-See Details for more information.}
+items. If both \code{items} and \code{iprefix} are omitted, then
+\code{qlq_c30} will assume that \code{df} contains \strong{ONLY} the
+QLQ-C30 items and no other variables. See Details for more information.}
 
 \item{keepNvalid}{Logical, whether to return variables containing the
 number of valid, non-missing items on each scale for each respondent should
@@ -38,7 +38,7 @@ useful and would rather it remain a part of the function.}
 A data frame with all of the QLQ-C30 scores is returned.  All scores
 are scaled to range from 0-100, even scores based on single items.  Be
 aware that these single-item scales still have only 4 possible values, even
-though they are transformed to range from 0-100.  The scale name and number
+though they are transformed to range from 0-100.  The scale names and numbers
 of items are listed below.
 
 \strong{Global health status/QoL}
