@@ -90,19 +90,13 @@
 #' Cancer (EORTC) Quality-of-Life questionnaire cervical cancer module - EORTC
 #' QLQ-CX24. \emph{Cancer 107} (8): 1812-1822, 2006.
 #'
-#' Fitzsimmons D, Johnson CD, George S, et al. Development of a disease specific
-#' quality of life (QoL) questionnaire module to supplement the EORTC core
-#' cancer QoL questionnaire, the QLQ-CX24 in patients with pancreatic cancer.
-#' \emph{Eur. J. Cancer 35}: 939-941, 1999.
-#'
-#'
 #'
 #' @export
 #'
 #' @examples
 #'
 #' \dontrun{
-#' dat <- PROscorerTools::makeFakeData(n = 10, nitems = 24, prefix = "pan", values = 1:4)
+#' dat <- PROscorerTools::makeFakeData(n = 10, nitems = 24, prefix = "cx", values = 1:4)
 #' qlq_cx24(dat, items = 1:24)
 #' }
 

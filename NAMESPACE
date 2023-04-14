@@ -2,6 +2,8 @@
 
 export(fsfi)
 export(narcc)
+export(qlq_blm30)
 export(qlq_c30)
+export(qlq_cr38)
 export(qlq_cx24)
 export(qlq_pan26)

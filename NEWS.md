@@ -1,3 +1,12 @@
+# PROscorer 0.0.3.9003 (2023-04-13)
+
+* New function, `qlq_blm30`.  Scores the EORTC QLQ-BLM30 Muscle-Invasive Bladder Cancer Module.
+
+* New function, `qlq_cr38`.  Scores the EORTC QLQ-CR38 Colorectal Cancer Module.  
+
+* Minor documentation corrections for `qlq_cx24`.
+
+
 # PROscorer 0.0.3.9002 (2023-03-29)
 
 * New function, `qlq_pan26`.  Scores the EORTC QLQ-PAN26 Pancreatic Cancer Module.
