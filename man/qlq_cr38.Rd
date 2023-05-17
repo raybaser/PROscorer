@@ -68,7 +68,8 @@ just use the \code{df} argument and omit \code{items}.
 Some of the QLQ-CR38 items/scales are not applicable to all patients.  There
 are 2 questions for men only, 2 questions for women only, 7 questions only
 for patients WITHOUT a stoma (colostomy bag), and 7 questions only for
-patients WITH a stoma.  Patients will have
+patients WITH a stoma.  Patients will therefore have missing values for some
+of the scale scores.
 
 \strong{Functional Scales (higher is better functioning)}
 \itemize{
@@ -87,7 +88,7 @@ patients WITH a stoma.  Patients will have
 \item \strong{CR_STO} - Stoma-Related Problems (Only for Pts w/stoma) (7 items)
 \item \strong{CR_MSX} - Male Sexual Problems (2 items)
 \item \strong{CR_FSX} - Female Sexual Problems (2 items)
-\item \strong{CR_WL}  - Weigt Loss (1 item)
+\item \strong{CR_WL}  - Weight Loss (1 item)
 }
 
 Optionally, the data frame can additionally have variables containing the

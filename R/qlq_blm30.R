@@ -78,8 +78,8 @@
 #'   \item \strong{BLM_US} - Urinary Symptoms (from 7 items)
 #'   \item \strong{BLM_UP} - Urostomy Problems (from 6 items)
 #'   \item \strong{BLM_FU} - Future Perspective (from 3 items)
-#'   \item \strong{BLM_BAF} - Abdominal Bloating and Flatulence (from 2 item)
-#'   \item \strong{BLM_BI} - Body Image (from 3 item)
+#'   \item \strong{BLM_BAF} - Abdominal Bloating and Flatulence (from 2 items)
+#'   \item \strong{BLM_BI} - Body Image (from 3 items)
 #'   \item \strong{BLM_CU} - Catheter Use Problems (from 1 item)
 #' }
 #'
@@ -97,6 +97,11 @@
 #' @references
 #'
 #' The QLQ-BLM30 validation study does not appear to be publicly available.
+#'
+#' Rammant E, Fox L, Beyer K, et al. The current use of the EORTC QLQ-NMIBC24
+#' and QLQ-BLM30 questionnaires for the assessment of health-related quality of
+#' life in bladder cancer patients: a systematic review. _Qual Life Res_.
+#' Published online January 17, 2023. doi:10.1007/s11136-022-03335-4
 #'
 #'
 #' @export

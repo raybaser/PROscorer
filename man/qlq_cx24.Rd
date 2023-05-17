@@ -82,6 +82,18 @@ in order, with no other non-QLQ-CX24 variables.  In this case, you can
 just use the \code{df} argument and omit \code{items}.
 }
 }
+\note{
+Note that the QLQ-CX24 instructs respondents to
+answer the last 5 questions on the instrument \strong{only} if they have been
+sexually active during the past 4 weeks.  These 5 items include all 4 items on
+the Sexual/Vaginal Functioning symptom scale and the 1 item on the Sexual
+Enjoyment functional scale.  Because of this, when the QLQ-CX24 is scored
+correctly, \strong{it is normal for a large number of respondents to have}
+\strong{missing values for the Sexual/Vaginal Functioning and Sexual Enjoyment}
+\strong{scores}.  This is due to those respondents skipping those questions
+because they were not sexually active during the 4 weeks before completing
+the questionnaire.
+}
 \section{How Missing Data is Handled}{
 
 The \code{qlq_cx24} function will calculate the scale scores as long as at

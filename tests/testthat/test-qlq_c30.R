@@ -15,11 +15,11 @@ test_that("qlq_c30: Error if both 'iprefix' and 'items' given", {
 ## These tests are causing problems with CRAN checks.
 ## I cannot reproduce, so I am commenting out these tests for now.
 
-# test_that("qlq_c30: Expect no error (silent) when correct input given", {
-#   expect_silent(qlq_c30(df = dat, iprefix = "q"))
-#   expect_silent(qlq_c30(df = dat, items = 1:30))
-#   expect_silent(qlq_c30(df = dat, items = 1:30, keepNvalid = TRUE))
-# })
+test_that("qlq_c30: Expect no error (silent) when correct input given", {
+  expect_silent(qlq_c30(df = dat, iprefix = "q"))
+  expect_silent(qlq_c30(df = dat, items = 1:30))
+  expect_silent(qlq_c30(df = dat, items = 1:30, keepNvalid = TRUE))
+})
 
 
 

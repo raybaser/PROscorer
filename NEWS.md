@@ -1,3 +1,11 @@
+# PROscorer 0.0.3.9004 (2023-05-17)
+
+* Added and edited instrument descriptions in "Instrument Descriptions" vignette.
+
+* Minor documentation corrections.
+
+
+
 # PROscorer 0.0.3.9003 (2023-04-13)
 
 * New function, `qlq_blm30`.  Scores the EORTC QLQ-BLM30 Muscle-Invasive Bladder Cancer Module.

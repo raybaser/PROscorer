@@ -65,15 +65,15 @@ study objectives, then add a sentence indicating the focal scale scores.
 Please cite the PROscorer package and this vignette document (I hope to obtain
 DOIs soon):
 
-  Baser, RE (2022). PROscorer: Scoring Functions for Patient-Reported Outcome
-  (PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.2.
+  Baser, RE (2023). PROscorer: Scoring Functions for Patient-Reported Outcome
+  (PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.4.
   https://cran.r-project.org/package=PROscorer
   
-  Baser, RE (2022). Descriptions of Instruments Scored by PROscorer. R Package
-  Vignette version 0.0.2. https://cran.r-project.org/package=PROscorer
+  Baser, RE (2023). Descriptions of Instruments Scored by PROscorer. R Package
+  Vignette version 0.0.4. https://cran.r-project.org/package=PROscorer
 
 
-# Guidelines for Describing PRO Measures:
+# Guidelines for Describing Patient Reported Outcome Measures (PROMs):
 
 I developed the following guidelines during my years of service as a chair of 
 the Biostatistics Protocol Review Committee at a large cancer treatment and 
@@ -97,27 +97,19 @@ scores indicate more/less severe symptom levels), and, if available, reliability
 coefficients (e.g., internal consistency, test-retest) for each subscale score
 and, if relevant, for the instrument’s total score.
 
-    a.	If not all of the instrument’s scales are relevant to evaluating the
-    study objective, please indicate which scale scores will be utilized.
-    b.  Many PROM scores have validated cut-points that divide the scores into 2
+    a.  Many PROM scores have validated cut-points that divide the scores into 2
     or more range categories believed to be clinically or diagnostically
-    relevant.  If the protocol PROM scores will be categorized, provide the
+    relevant.  If the PROM has such score categories, provide the
     score cut-points or ranges defining each category as well as the clinical
     interpretation of each category.
 
-3.	The PROM’s scoring instructions, or a citation and reference to a publication
-containing the scoring instructions.
+3.	A citation and reference to the instrument's original psychometric validation
+study, and any relevant subsequent validation studies. At least one reference
+should indicate how the instrument is scored.  Please also mention the
+_PROscorer_ R package and the relevant _PROscorer_ scoring function, and please
+cite the _PROscorer_ R package.
 
-    a.  A citation and reference to a publication containing the scoring
-    instructions, if available, is sufficient.  Often, the scoring instructions
-    are included in the report of the PROM’s original psychometric validation. 
-    b.  If the scoring instructions are unpublished, as might be the case with a
-    newly developed PROM, they must be included in the protocol, possibly as an
-    appendix.
-    c.  Please also cite the _PROscorer_ R package and this vignette document
-    (see previous section).
-
-4.	Estimates of how long it will take study participants to complete each PROM,
+4.	Estimates of how long it will take study participants to complete the PROM,
 as well as an estimate of how long it will take them to complete the full
 battery of PROMs.
 
@@ -158,8 +150,8 @@ D’Agostino, R. (2000). The Female Sexual Function Index (FSFI): a
 multidimensional self-report instrument for the assessment of female sexual
 function. _Journal of Sex & Marital Therapy_, 26(2), 191–208.
 
-2.  Baser, RE (2022). PROscorer: Scoring Functions for Patient-Reported Outcome
-(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.2.
+2.  Baser, RE (2023). PROscorer: Scoring Functions for Patient-Reported Outcome
+(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.4.
 
 3.  Wiegel, M, Meston, C, & Rosen, R. (2005). The Female Sexual Function Index
 (FSFI): Cross-Validation and Development of Clinical Cutoff Scores. _Journal of
@@ -207,8 +199,53 @@ Invariance of Intuitive Cancer Risk Perceptions Across Diverse Populations: The
 Cognitive Causation and Negative Affect in Risk Scales. _Journal of Health
 Psychology_.
 
-3.  Baser, RE (2022). PROscorer: Scoring Functions for Patient-Reported Outcome
-(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.2.
+3.  Baser, RE (2023). PROscorer: Scoring Functions for Patient-Reported Outcome
+(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.4.
+
+
+
+
+## EORTC QLQ-BLM30
+
+The European Organization for Research and Treatment of Cancer (EORTC) QLQ-BLM30
+Muscle-Invasive Bladder Cancer Module is a 30-item questionnaire designed to
+assess health-related quality of life (HRQoL) in patients with muscle-invasive
+bladder cancer.**[REF 1]** The questionnaire asks patients to indicate the
+extent to which they have experienced each of the problems “during the past
+week” on a 4-point Likert-type response scale from “Not at all” to “Very much”.
+
+The 30 items of the QLQ-BLM30 yield 7 scale scores.  Of the 7 scores, 6 are
+Symptom Scales and 1 is a Functional Scale.  Five of the Symptom Scales are
+based on multiple items: Urinary Symptoms (7 items), Urostomy Problems (6
+items), Future Perspective (3 items), Abdominal Bloating and Flatulence (2
+items), and Body Image (3 items).  One Symptom Scale is based on a single item
+(Catheter Use Problems).  The single Functional Scale, Sexual Functioning, is
+based on either 2, 4, 6, or 7 items, depending on whether the respondent is male
+or female and whether he or she is sexually active.  Psychometric validation
+results for the QLQ-BLM30 are lacking.**[REF 1]**
+
+The scoring procedure for the QLQ-BLM30 (available at
+https://qol.eortc.org/questionnaires/) transforms all of the scale and
+single-item scores to range from 0 to 100.  High scores for the functional scale
+represent high/healthy levels of functioning, but high scores for the symptom
+scales/items represent high levels of symptomatology/problems.  Accurate scoring
+for the EORTC QLQ-BLM30 is available in the _PROscorer_ R package using the
+__`qlq_blm30()`__ function**[REF 2]**.  Note that the QLQ-BLM30 instructs
+respondents to answer subsets of questions conditional on whether they have a
+urostomy or not, whether they used a catheter during the past week, whether they
+are a man or a woman, and whether they have been sexually active during the past
+4 weeks.  Therefore, not all of the scale scores are applicable to all patients.
+
+
+#### REFERENCES: 
+
+1. Rammant E, Fox L, Beyer K, et al. The current use of the EORTC QLQ-NMIBC24
+and QLQ-BLM30 questionnaires for the assessment of health-related quality of
+life in bladder cancer patients: a systematic review. _Qual Life Res_. Published
+online January 17, 2023. doi:10.1007/s11136-022-03335-4
+
+2.  Baser, RE (2023). PROscorer: Scoring Functions for Patient-Reported Outcome
+(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.4.
 
 
 ## EORTC QLQ-C30 (version 3.0)
@@ -265,5 +302,164 @@ behalf of the EORTC Quality of Life Group.  _The EORTC QLQ-C30 Scoring Manual
 (3rd Edition)_.  Published by: European Organisation for Research and Treatment
 of Cancer, Brussels 2001.
 
-4.  Baser, RE (2022). PROscorer: Scoring Functions for Patient-Reported Outcome
-(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.2.
+4.  Baser, RE (2023). PROscorer: Scoring Functions for Patient-Reported Outcome
+(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.4.
+
+
+
+
+## EORTC QLQ-CR38
+
+The European Organization for Research and Treatment of Cancer (EORTC) QLQ-CR38
+Colorectal Cancer Module is a 38-item questionnaire designed to
+assess health-related quality of life (HRQoL) in patients with colorectal 
+cancer.**[REF 1]** The questionnaire asks patients to indicate the
+extent to which they have experienced each of the problems “during the past
+week” on a 4-point Likert-type response scale from “Not at all” to “Very much”.
+
+The 38 items of the QLQ-CR38 yield 12 scale scores.  Of the 12 scores, 8 are
+Symptom Scales and 4 are Functional Scales.  Seven of the Symptom Scales are
+based on multiple items: Micturition Problems (3 items), Gastrointestinal Tract
+Symptoms (5 items), Chemotherapy Side-Effects (3 items), Problems with
+Defacation (Only for Pts WITHOUT a stoma) (7 items), Stoma-Related Problems
+(Only for Pts w/stoma) (7 items), Male Sexual Problems (2 items), and Female
+Sexual Problems (2 items).  There is 1 single-item symptom scale (Weight Loss).
+Two of the Functional Scales are based on multiple items: Body Image (3 items),
+and Sexual Functioning (2 items).  The other 2 Functional Scales are based on
+single items (Sexual Enjoyment and Future Perspective).
+
+Note that the QLQ-CR38 instructs respondents to answer subsets of questions
+conditional on whether they have a have a stoma or not, whether they are a man
+or a woman, and whether they have been sexually active during the past 4 weeks.
+Therefore, not all of the scale scores are applicable to all patients.  
+
+The scoring procedure for the QLQ-CR38 transforms all of the scale and
+single-item scores to range from 0 to 100.  High scores for the functional scale
+represent high/healthy levels of functioning, but high scores for the symptom
+scales/items represent high levels of symptomatology/problems.  Accurate scoring
+for the EORTC QLQ-CR38 is available in the _PROscorer_ R package using the
+__`qlq_cr38()`__ function**[REF 2]**. The scoring instructions for the QLQ-CR38
+are no longer available on the EORTC website, and the QLQ-CR38 seems to have
+been superseded by the QLQ-CR29**[REF 3]**, which was designed in response to
+concerns that the QLQ-CR38 was outdated and no longer adequately assessed the
+side effects and possible functional advantages of current treatment regiments
+for colorectal cancer.
+
+#### REFERENCES: 
+
+1. Sprangers MAG, te Velde A, Aaronson NK. The construction and testing of the
+EORTC colorectal cancer-specific quality of life questionnaire module
+(QLQ-CR38). _European Journal of Cancer_. 1999;35(2):238-247.
+doi:10.1016/S0959-8049(98)00357-8
+
+2.  Baser, RE (2023). PROscorer: Scoring Functions for Patient-Reported Outcome
+(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.4.
+
+3. Gujral S, Conroy T, Fleissner C, et al. Assessing quality of life in patients
+with colorectal cancer: An update of the EORTC quality of life questionnaire.
+European Journal of Cancer. 2007;43(10):1564-1573.
+doi:10.1016/j.ejca.2007.04.005
+
+
+
+## EORTC QLQ-CX24
+
+The European Organization for Research and Treatment of Cancer (EORTC) QLQ-CX24
+Cervical Cancer Module is a 24-item questionnaire designed to assess
+health-related quality of life (HRQoL) in patients with cervical cancer.**[REF 1]**  
+The questionnaire asks patients to indicate the extent to which they have
+experienced each of the problems “during the past week” on a 4-point Likert-type
+response scale from “Not at all” to “Very much”.
+
+The 24 items of the QLQ-CX24 yield both multi-item scale scores and single-item
+scores, for a total of 9 distinct scores.  Of the 9 scores, 7 are Symptom Scales
+and 2 are Functional Scales.  Three of the Symptom Scales are based on multiple
+items: Symptom Experience (11 items), Body Image (3 items), and
+Sexual/Vaginal Functioning (4 items).  The other 4 Symptom Scales
+(Lymphoedema, Peripheral Neuropathy, Menopausal Symptoms, and Sexual Worry) and
+both Functional Scales (Sexual Activity, Sexual Enjoyment) are all based on
+single items. In the original psychometric validation study of the QLQ-CX24,
+internal consistency reliability coefficients for the multi-item scales were
+0.72 for Symptom Experience, 0.86 for Body Image, and 0.87 for Sexual/Vaginal
+Functioning.**[REF 1]**
+
+The scoring procedure for the QLQ-CX24 (available at
+https://qol.eortc.org/questionnaires/) transforms all of the scale and
+single-item scores to range from 0 to 100.  High scores for the functional
+scales represent high/healthy levels of functioning, but high scores for the
+symptom scales/items represent high levels of symptomatology/problems.  Accurate
+scoring for the EORTC QLQ-CX24 is available in the _PROscorer_ R package using
+the __`qlq_cx24()`__ function**[REF 2]**.  Note that the QLQ-CX24 instructs
+respondents to answer the last 5 questions on the instrument __only__ if they
+have been sexually active during the past 4 weeks.  These 5 items include all 4
+items on the Sexual/Vaginal Functioning symptom scale and the 1 item on the
+Sexual Enjoyment functional scale.  These scale scores will be missing for
+respondents who were not sexually active during the 4 weeks before completing
+the questionnaire.
+
+
+
+#### REFERENCES: 
+
+1. Greimel ER, Kuljanic Vlasic K, Waldenstrom AC, et al. The European
+Organization for Research and Treatment of Cancer (EORTC) Quality-of-Life
+questionnaire cervical cancer module. _Cancer_. 2006;107(8):1812-1822.
+doi:10.1002/cncr.22217
+
+2.  Baser, RE (2023). PROscorer: Scoring Functions for Patient-Reported Outcome
+(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.4.
+
+
+
+
+## EORTC QLQ-PAN26
+The European Organization for Research and Treatment of Cancer (EORTC) QLQ-PAN26
+Pancreatic Cancer Module is a 26-item questionnaire designed to assess 
+health-related quality of life (HRQoL) in patients with pancreatic cancer.
+**[REF 1]**  The questionnaire asks patients to indicate the extent to which they have
+experienced each of the problems “during the past week” on a 4-point Likert-type
+response scale from “Not at all” to “Very much”.  The 26 items of the QLQ-PAN26
+yield both multi-item scale scores and single-item scores, for a total of 17
+distinct scores.  These include two multi-item functional scales (Satisfaction
+with Health Care, 2 items; Sexuality, 2 items), five multi-item symptom scales
+(Pancreatic Pain, 4 items; Digestive Symptoms, 2 items; Hepatic Symptoms, 2
+items; Altered Bowel Habit, 2 items; Body Image, 2 items;), and 10 single item
+symptom scales (Bloating, Taste, Indigestion, Flatulence, Weight Loss, Weakness
+in Arms and Legs, Dry Mouth, Troubled with Side-Effects, Future Worries, and
+Planning of Activities).**[REF 1]**.  In a large psychometric validation study
+of the QLQ-PAN26, internal consistency reliability coefficients for the
+multi-item scales were generally above 0.70 at the pre-surgical baseline
+assessment as well as at 14- and 60-day post-surgical assessments, with the
+exception of the Hepatic Symptoms scale which had poor post-surgery
+reliability.**[REF 2]**
+
+The scoring procedure for the QLQ-PAN26 (available at
+https://qol.eortc.org/questionnaires/) transforms all of the scale and
+single-item scores to range from 0 to 100.  High scores for the functional
+scales represent high/healthy levels of functioning, but high scores for the
+symptom scales/items represent high levels of symptomatology/problems.  Accurate
+scoring for the EORTC QLQ-PAN26 is available in the _PROscorer_ R package using
+the __`qlq_pan26()`__ function**[REF 3]**.  
+
+NOTE: At the time this scoring function was written (April 2022), the QLQ-PAN26
+had completed Phase 3 testing; however, the official scoring instructions from
+the EORTC warned that this scaling structure is still preliminary and may change
+in the future (see https://qol.eortc.org/questionnaires/).
+
+
+#### REFERENCES:
+1.	Fitzsimmons D, Johnson CD, George S, et al. Development of a disease specific
+quality of life (QoL) questionnaire module to supplement the EORTC core
+cancer QoL questionnaire, the QLQ-PAN26 in patients with pancreatic cancer.
+_Eur. J. Cancer 35_: 939-941, 1999.
+
+2. Eaton A, Karanicolas PJ, MChir CDJ, Bottomley A, Allen PJ, Gonen M.
+Psychometric Validation of the EORTC QLQ-PAN26 Pancreatic Cancer Module for
+Assessing Health Related Quality of Life after Pancreatic Resection. Journal of
+the Pancreas. Published online January 1, 2017. Accessed May 10, 2023.
+https://www.scinapse.io/papers/2592882746
+
+3.  Baser, RE (2023). PROscorer: Scoring Functions for Patient-Reported Outcome
+(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.4.
+
+
