@@ -1,4 +1,12 @@
-# PROscorer 0.0.3.9004 (2023-05-17)
+# PROscorer 0.0.4 (2023-10-14)
+
+* This CRAN version includes all updates since PROscorer version 0.0.3 (2022-03-09)
+
+* Tiny change to documentation to fix CRAN error. 
+
+
+
+# PROscorer 0.0.3.9004 (2023-05-17) 
 
 * Added and edited instrument descriptions in "Instrument Descriptions" vignette.
 

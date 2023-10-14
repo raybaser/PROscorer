@@ -242,7 +242,7 @@ are a man or a woman, and whether they have been sexually active during the past
 1. Rammant E, Fox L, Beyer K, et al. The current use of the EORTC QLQ-NMIBC24
 and QLQ-BLM30 questionnaires for the assessment of health-related quality of
 life in bladder cancer patients: a systematic review. _Qual Life Res_. Published
-online January 17, 2023. doi:10.1007/s11136-022-03335-4
+online January 17, 2023. \doi{10.1007/s11136-022-03335-4}
 
 2.  Baser, RE (2023). PROscorer: Scoring Functions for Patient-Reported Outcome
 (PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.4.
@@ -350,7 +350,7 @@ for colorectal cancer.
 1. Sprangers MAG, te Velde A, Aaronson NK. The construction and testing of the
 EORTC colorectal cancer-specific quality of life questionnaire module
 (QLQ-CR38). _European Journal of Cancer_. 1999;35(2):238-247.
-doi:10.1016/S0959-8049(98)00357-8
+\doi{10.1016/S0959-8049(98)00357-8}
 
 2.  Baser, RE (2023). PROscorer: Scoring Functions for Patient-Reported Outcome
 (PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.4.
@@ -358,7 +358,7 @@ doi:10.1016/S0959-8049(98)00357-8
 3. Gujral S, Conroy T, Fleissner C, et al. Assessing quality of life in patients
 with colorectal cancer: An update of the EORTC quality of life questionnaire.
 European Journal of Cancer. 2007;43(10):1564-1573.
-doi:10.1016/j.ejca.2007.04.005
+\doi{10.1016/j.ejca.2007.04.005}
 
 
 
@@ -404,7 +404,7 @@ the questionnaire.
 1. Greimel ER, Kuljanic Vlasic K, Waldenstrom AC, et al. The European
 Organization for Research and Treatment of Cancer (EORTC) Quality-of-Life
 questionnaire cervical cancer module. _Cancer_. 2006;107(8):1812-1822.
-doi:10.1002/cncr.22217
+\doi{10.1002/cncr.22217}
 
 2.  Baser, RE (2023). PROscorer: Scoring Functions for Patient-Reported Outcome
 (PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.4.

@@ -127,32 +127,30 @@ For more information on the `qlq_c30` function, you can access its
 
 ## Resources for More Information
 
--   You can access the “help” page for “PROscorer” package by typing
-    `?PROscorer` into R.
+- You can access the “help” page for “PROscorer” package by typing
+  `?PROscorer` into R.
 
--   For more detailed information on ‘PROscorer’, including future
-    development plans, please see the Introduction to PROscorer vignette
-    on the main
-    [PROscorer](https://CRAN.R-project.org/package=PROscorer) page on
-    CRAN.
+- For more detailed information on ‘PROscorer’, including future
+  development plans, please see the Introduction to PROscorer vignette
+  on the main [PROscorer](https://CRAN.R-project.org/package=PROscorer)
+  page on CRAN.
 
--   You might find the [other PROscorer
-    vignettes](https://CRAN.R-project.org/package=PROscorer) helpful,
-    too. You can access them from the main
-    [PROscorer](https://CRAN.R-project.org/package=PROscorer) webpage on
-    CRAN.
+- You might find the [other PROscorer
+  vignettes](https://CRAN.R-project.org/package=PROscorer) helpful, too.
+  You can access them from the main
+  [PROscorer](https://CRAN.R-project.org/package=PROscorer) webpage on
+  CRAN.
 
--   The underlying code base of the
-    [PROscorer](https://CRAN.R-project.org/package=PROscorer) package is
-    built from functions from the [PROscorerTools
-    package](https://CRAN.R-project.org/package=PROscorerTools).
+- The underlying code base of the
+  [PROscorer](https://CRAN.R-project.org/package=PROscorer) package is
+  built from functions from the [PROscorerTools
+  package](https://CRAN.R-project.org/package=PROscorerTools).
 
--   If you need to score PRO measures from the the FACT (Functional
-    Assessment of Cancer Therapy) and FACIT (Functional Assessment of
-    Chronic Illness Therapy) family of measures, please see the
-    [FACTscorer package](https://github.com/raybaser/FACTscorer).
+- If you need to score PRO measures from the the FACT (Functional
+  Assessment of Cancer Therapy) and FACIT (Functional Assessment of
+  Chronic Illness Therapy) family of measures, please see the
+  [FACTscorer package](https://github.com/raybaser/FACTscorer).
 
--   If you have any feature requests, or you want to report bugs or
-    other strange behavior in *PROscorer*, please submit them to me on
-    the [PROscorer GitHub
-    page](https://github.com/raybaser/PROscorer/issues).
+- If you have any feature requests, or you want to report bugs or other
+  strange behavior in *PROscorer*, please submit them to me on the
+  [PROscorer GitHub page](https://github.com/raybaser/PROscorer/issues).

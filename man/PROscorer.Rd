@@ -3,6 +3,7 @@
 \docType{package}
 \name{PROscorer}
 \alias{PROscorer}
+\alias{PROscorer-package}
 \title{PROscorer}
 \description{
 An open-source repository of functions to score specific
@@ -108,3 +109,15 @@ or other unexpected behaviors you encounter.  Make feature requests and bug
 reports here: https://github.com/raybaser/PROscorerTools/issues
 }
 
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/raybaser/PROscorer}
+  \item Report bugs at \url{https://github.com/raybaser/PROscorer/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Ray Baser \email{ray.stats@gmail.com}
+
+}

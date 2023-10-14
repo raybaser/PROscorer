@@ -97,6 +97,4 @@
 #'   reports here: https://github.com/raybaser/PROscorerTools/issues
 #'
 #' @name PROscorer
-#'
-#' @docType package
-NULL
+"_PACKAGE"
