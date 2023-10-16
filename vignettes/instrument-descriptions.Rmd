@@ -321,7 +321,7 @@ The 38 items of the QLQ-CR38 yield 12 scale scores.  Of the 12 scores, 8 are
 Symptom Scales and 4 are Functional Scales.  Seven of the Symptom Scales are
 based on multiple items: Micturition Problems (3 items), Gastrointestinal Tract
 Symptoms (5 items), Chemotherapy Side-Effects (3 items), Problems with
-Defacation (Only for Pts WITHOUT a stoma) (7 items), Stoma-Related Problems
+Defecation (Only for Pts WITHOUT a stoma) (7 items), Stoma-Related Problems
 (Only for Pts w/stoma) (7 items), Male Sexual Problems (2 items), and Female
 Sexual Problems (2 items).  There is 1 single-item symptom scale (Weight Loss).
 Two of the Functional Scales are based on multiple items: Body Image (3 items),

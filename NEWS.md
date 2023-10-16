@@ -1,4 +1,4 @@
-# PROscorer 0.0.4 (2023-10-14)
+# PROscorer 0.0.4 (2023-10-16)
 
 * This CRAN version includes all updates since PROscorer version 0.0.3 (2022-03-09)
 
