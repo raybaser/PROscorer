@@ -84,7 +84,7 @@ of the scale scores.
 \item \strong{CR_MI}  - Micturition Problems (3 items)
 \item \strong{CR_GI}  - Gastrointestinal Tract Symptoms (5 items)
 \item \strong{CR_CT}  - Chemotherapy Side-Effects (3 items)
-\item \strong{CR_DF}  - Problems with Defacation (Only for Pts WITHOUT a stoma) (7 items)
+\item \strong{CR_DF}  - Problems with Defecation (Only for Pts WITHOUT a stoma) (7 items)
 \item \strong{CR_STO} - Stoma-Related Problems (Only for Pts w/stoma) (7 items)
 \item \strong{CR_MSX} - Male Sexual Problems (2 items)
 \item \strong{CR_FSX} - Female Sexual Problems (2 items)

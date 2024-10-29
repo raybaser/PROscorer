@@ -2,7 +2,7 @@ Type: Package
 Package: PROscorer
 Title: Functions to Score Commonly-Used Patient-Reported Outcome (PRO)
     Measures and Other Psychometric Instruments
-Version: 0.0.4
+Version: 0.0.4.9001
 Authors@R: 
     person("Ray", "Baser", , "ray.stats@gmail.com", role = c("aut", "cre"))
 Description: An extensible repository of accurate, up-to-date functions to
@@ -34,5 +34,5 @@ VignetteBuilder:
     knitr
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Language: en-US

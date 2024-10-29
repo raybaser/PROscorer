@@ -130,7 +130,7 @@ For more information on the `qlq_c30` function, you can access its
 - You can access the “help” page for “PROscorer” package by typing
   `?PROscorer` into R.
 
-- For more detailed information on "PROscorer", including future
+- For more detailed information on ‘PROscorer’, including future
   development plans, please see the Introduction to PROscorer vignette
   on the main [PROscorer](https://CRAN.R-project.org/package=PROscorer)
   page on CRAN.

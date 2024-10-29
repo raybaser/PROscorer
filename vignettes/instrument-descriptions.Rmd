@@ -411,6 +411,52 @@ questionnaire cervical cancer module. _Cancer_. 2006;107(8):1812-1822.
 
 
 
+## EORTC QLQ-LMC21
+
+The European Organization for Research and Treatment of Cancer (EORTC) QLQ-LMC21
+Colorectal Liver Cancer Module is a 21-item questionnaire designed to assess
+health-related quality of life (HRQoL) in patients with colorectal liver
+metastases.**[REF 1, REF 2]** The questionnaire asks patients to indicate the
+extent to which they have experienced each of the problems “during the past
+week” on a 4-point Likert-type response scale from “Not at all” to “Very much”.
+
+The 21 items of the QLQ-LMC21 yield both multi-item scale scores and single-item
+scores, for a total of 13 distinct scores.  Of these, all 13 are Symptom Scales.
+Four of the Symptom Scales are based on multiple items: Nutritional problems (2
+items), Fatigue (3 items), Pain (3 items), and Emotional problems (4 items). The
+other 9 Symptom Scales (Weight loss, Taste, Dry mouth, Sore mouth/tongue,
+Peripheral neuropathy, Jaundice, Contact with friends, Talking about feelings,
+and Sex life) are all based on single items. In the original psychometric
+validation study of the QLQ-LMC21, internal consistency reliability coefficients
+for the multi-item scales ranged from 0.69-0.87 for Nutrition problems,
+0.89-0.93 for Fatigue, 0.73-0.78 for Pain, and 0.78-0.82 for Emotional
+problems.**[REF 2]**
+
+The scoring procedure for the QLQ-LMC21 (available at
+https://qol.eortc.org/questionnaires/) transforms all of the scale and
+single-item scores to range from 0 to 100.  High scores for the
+symptom scales/items represent high levels of symptomatology/problems.  
+Scoring for the EORTC QLQ-LMC21 is available in the _PROscorer_ R package using
+the __`qlq_lmc21()`__ function**[REF 3]**.  
+
+
+
+#### REFERENCES: 
+
+1. Kavadas V, Blazeby JM, et al.  Development of an EORTC disease-specific
+quality of life questionnaire for use in patients with liver metastases from
+colorectal cancer. \emph{Eur J Cancer}. 2003 Jun;39(9):1259-63.  
+
+2. Blazeby JM, Fayers P, Conroy T, et al. Validation of the EORTC QLQ-LCM21
+Questionnaire for Assessment of Patient-Reported Outcomes During Treatment of
+Colorectal Liver Metastases. \emph{Br J Surg 96}:291-298, 2009.  
+
+3. Baser, RE (2023). PROscorer: Scoring Functions for Patient-Reported Outcome
+(PRO) Measures and Other Psychometric Instruments. R Package Version 0.0.4.  
+
+
+
+
 
 ## EORTC QLQ-PAN26
 The European Organization for Research and Treatment of Cancer (EORTC) QLQ-PAN26

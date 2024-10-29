@@ -2,8 +2,8 @@
 % Please edit documentation in R/PROscorer-package.r
 \docType{package}
 \name{PROscorer}
-\alias{PROscorer}
 \alias{PROscorer-package}
+\alias{PROscorer}
 \title{PROscorer}
 \description{
 An open-source repository of functions to score specific

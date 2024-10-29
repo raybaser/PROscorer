@@ -12,7 +12,7 @@
 
 <meta name="author" content="Ray Baser" />
 
-<meta name="date" content="2023-10-14" />
+<meta name="date" content="2024-10-29" />
 
 <title>Descriptions of Instruments Scored by PROscorer</title>
 
@@ -240,7 +240,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <h1 class="title toc-ignore">Descriptions of Instruments Scored by
 PROscorer</h1>
 <h4 class="author">Ray Baser</h4>
-<h4 class="date">2023-10-14</h4>
+<h4 class="date">2024-10-29</h4>
 
 
 <div id="TOC">
@@ -263,6 +263,8 @@ QLQ-BLM30</a></li>
 QLQ-CR38</a></li>
 <li><a href="#eortc-qlq-cx24" id="toc-eortc-qlq-cx24">EORTC
 QLQ-CX24</a></li>
+<li><a href="#eortc-qlq-lmc21" id="toc-eortc-qlq-lmc21">EORTC
+QLQ-LMC21</a></li>
 <li><a href="#eortc-qlq-pan26" id="toc-eortc-qlq-pan26">EORTC
 QLQ-PAN26</a></li>
 </ul></li>
@@ -590,7 +592,7 @@ scale from “Not at all” to “Very much”.</p>
 8 are Symptom Scales and 4 are Functional Scales. Seven of the Symptom
 Scales are based on multiple items: Micturition Problems (3 items),
 Gastrointestinal Tract Symptoms (5 items), Chemotherapy Side-Effects (3
-items), Problems with Defacation (Only for Pts WITHOUT a stoma) (7
+items), Problems with Defecation (Only for Pts WITHOUT a stoma) (7
 items), Stoma-Related Problems (Only for Pts w/stoma) (7 items), Male
 Sexual Problems (2 items), and Female Sexual Problems (2 items). There
 is 1 single-item symptom scale (Weight Loss). Two of the Functional
@@ -680,6 +682,52 @@ Instruments. R Package Version 0.0.4.</p></li>
 </ol>
 </div>
 </div>
+<div id="eortc-qlq-lmc21" class="section level2">
+<h2>EORTC QLQ-LMC21</h2>
+<p>The European Organization for Research and Treatment of Cancer
+(EORTC) QLQ-LMC21 Colorectal Liver Cancer Module is a 21-item
+questionnaire designed to assess health-related quality of life (HRQoL)
+in patients with colorectal liver metastases.<strong>[REF 1, REF
+2]</strong> The questionnaire asks patients to indicate the extent to
+which they have experienced each of the problems “during the past week”
+on a 4-point Likert-type response scale from “Not at all” to “Very
+much”.</p>
+<p>The 21 items of the QLQ-LMC21 yield both multi-item scale scores and
+single-item scores, for a total of 13 distinct scores. Of these, all 13
+are Symptom Scales. Four of the Symptom Scales are based on multiple
+items: Nutritional problems (2 items), Fatigue (3 items), Pain (3
+items), and Emotional problems (4 items). The other 9 Symptom Scales
+(Weight loss, Taste, Dry mouth, Sore mouth/tongue, Peripheral
+neuropathy, Jaundice, Contact with friends, Talking about feelings, and
+Sex life) are all based on single items. In the original psychometric
+validation study of the QLQ-LMC21, internal consistency reliability
+coefficients for the multi-item scales ranged from 0.69-0.87 for
+Nutrition problems, 0.89-0.93 for Fatigue, 0.73-0.78 for Pain, and
+0.78-0.82 for Emotional problems.<strong>[REF 2]</strong></p>
+<p>The scoring procedure for the QLQ-LMC21 (available at <a href="https://qol.eortc.org/questionnaires/" class="uri">https://qol.eortc.org/questionnaires/</a>) transforms all of
+the scale and single-item scores to range from 0 to 100. High scores for
+the symptom scales/items represent high levels of
+symptomatology/problems.<br />
+Scoring for the EORTC QLQ-LMC21 is available in the <em>PROscorer</em> R
+package using the <strong><code>qlq_lmc21()</code></strong>
+function<strong>[REF 3]</strong>.</p>
+<div id="references-6" class="section level4">
+<h4>REFERENCES:</h4>
+<ol style="list-style-type: decimal">
+<li><p>Kavadas V, Blazeby JM, et al. Development of an EORTC
+disease-specific quality of life questionnaire for use in patients with
+liver metastases from colorectal cancer. . 2003
+Jun;39(9):1259-63.</p></li>
+<li><p>Blazeby JM, Fayers P, Conroy T, et al. Validation of the EORTC
+QLQ-LCM21 Questionnaire for Assessment of Patient-Reported Outcomes
+During Treatment of Colorectal Liver Metastases. :291-298,
+2009.</p></li>
+<li><p>Baser, RE (2023). PROscorer: Scoring Functions for
+Patient-Reported Outcome (PRO) Measures and Other Psychometric
+Instruments. R Package Version 0.0.4.</p></li>
+</ol>
+</div>
+</div>
 <div id="eortc-qlq-pan26" class="section level2">
 <h2>EORTC QLQ-PAN26</h2>
 <p>The European Organization for Research and Treatment of Cancer
@@ -715,7 +763,7 @@ available in the <em>PROscorer</em> R package using the
 QLQ-PAN26 had completed Phase 3 testing; however, the official scoring
 instructions from the EORTC warned that this scaling structure is still
 preliminary and may change in the future (see <a href="https://qol.eortc.org/questionnaires/" class="uri">https://qol.eortc.org/questionnaires/</a>).</p>
-<div id="references-6" class="section level4">
+<div id="references-7" class="section level4">
 <h4>REFERENCES:</h4>
 <ol style="list-style-type: decimal">
 <li><p>Fitzsimmons D, Johnson CD, George S, et al. Development of a

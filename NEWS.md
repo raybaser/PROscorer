@@ -1,3 +1,17 @@
+# PROscorer 0.0.4.9001 (2024-10-29)
+
+* New function, `qlq_lmc21`.  Scores the EORTC QLQ-LMC21 Colorectal Liver Cancer Module.
+
+
+# PROscorer 0.0.4.9000 (2023-10-17)
+
+* Possible breaking change:  
+  * `qlq_c30()` now outputs the QLQ-C30 Summary Score with name `C30SUMMARY`.  It
+  was previously named `QLQTOTAL` in the output data frame.  This change might 
+  cause problems downstream with your data processing and/or analysis code, 
+  if it relies on the older score name.
+
+
 # PROscorer 0.0.4 (2023-10-16)
 
 * This CRAN version includes all updates since PROscorer version 0.0.3 (2022-03-09)

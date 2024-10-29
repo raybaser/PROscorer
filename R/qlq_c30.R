@@ -385,17 +385,28 @@ qlq_c30 <- function(df, iprefix = NULL, items = NULL, keepNvalid = FALSE) {
   scoreDF <- data.frame(QL, PF, RF, EF, CF, SF,
                         FA, NV, PA, DY, SL, AP, CO, DI, FI)
 
-# Calculate QLQ-C30 summary score (QLQTOTAL)
+# Calculate QLQ-C30 summary score (C30SUMMARY)
   nms <- c("PF", "RF", "EF", "CF", "SF",
            "FA", "NV", "PA", "DY", "SL", "AP", "CO", "DI")
-  QLQTOTAL <- PROscorerTools::scoreScale( df = scoreDF, okmiss = 0,
+  C30SUMMARY <- PROscorerTools::scoreScale( df = scoreDF, okmiss = 0,
                   keepNvalid = FALSE,
                   minmax = c(0, 100),
                   type = "mean",
                   items = nms,
                   revitems = c("FA", "NV", "PA", "DY", "SL", "AP", "CO", "DI"),
-                  scalename = "QLQTOTAL" )
+                  scalename = "C30SUMMARY" )
 
-  scoreDF <- data.frame(scoreDF, QLQTOTAL)
+  scoreDF <- data.frame(scoreDF, C30SUMMARY)
+
+# Warn about summary score name change from QLQTOTAL to C30SUMMARY
+   message(paste(strwrap(
+     "NOTE: The QLQ-C30 Summary Score is now named 'C30SUMMARY' in the output
+     data frame.  In prior PROscorer versions (<= 0.0.4), it was named 'QLQTOTAL'.
+     This change might cause problems downstream with your data processing and/or
+     analysis code, if it relies on the older score name.",
+     exdent = 2),
+     collapse = "\n"))
+
+
   return(scoreDF)
 }
